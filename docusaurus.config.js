@@ -1,8 +1,6 @@
 // @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 // (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from 'prism-react-renderer';
 
@@ -12,18 +10,14 @@ const config = {
   tagline: 'Bring your website to another level',
   favicon: 'img/favicon.ico',
 
-  // Set the production URL of your site here
   url: 'https://your-github-username.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
   baseUrl: '/my-document/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'CagriCatik', // GitHub organization/user
-  projectName: 'My-RC-Plane-Knowledgebase', // Repository name
-  deploymentBranch: 'gh-pages', // Deployment branch
+  organizationName: 'CagriCatik',
+  projectName: 'My-RC-Plane-Knowledgebase',
+  deploymentBranch: 'gh-pages',
 
-  onBrokenLinks: 'warn', // Changed from "throw" to "warn" to prevent build failures
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
@@ -40,14 +34,13 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/CagriCatik/My-RC-Plane-Knowledgebase/edit/main/',
+          remarkPlugins: [require('remark-math')], // Add remark-math plugin
+          rehypePlugins: [require('rehype-katex')], // Add rehype-katex plugin
         },
         blog: {
           showReadingTime: true,
           editUrl:
             'https://github.com/CagriCatik/My-RC-Plane-Knowledgebase/edit/main/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -89,7 +82,7 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: '/docs/getting-started', // Updated path to a valid doc
+                to: '/docs/getting-started',
               },
             ],
           },
