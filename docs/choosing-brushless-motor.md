@@ -14,7 +14,7 @@ Drone motors aren’t all created equal. Their characteristics—KV, torque, and
 
 1. **Definition**  
    - **KV** is the number of revolutions per minute (RPM) a motor spins per volt applied, under no load.  
-   - For example, a 1000 KV motor will theoretically spin at \( 1000 \times V \) RPM on a given voltage \(V\), ignoring propeller load and other factors like air resistance.
+   - For example, a 1000 KV motor will theoretically spin at $1000 \times V$ RPM on a given voltage $V$, ignoring propeller load and other factors like air resistance.
 
 2. **Relationship to Propellers**  
    - A **higher KV** motor spins faster at a given voltage, making it suitable for smaller propellers or racing drones that require rapid RPM for agility.  
@@ -27,20 +27,20 @@ Drone motors aren’t all created equal. Their characteristics—KV, torque, and
 4. **Estimating Ideal KV**  
    - You can approximate an ideal KV using the **Propeller Coefficient (PC)**, which is derived from empirical testing of prop size and aerodynamic efficiency:
 
-     \[
+     $$
      \text{Required KV} = \frac{\text{Propeller Coefficient (PC)}}{\text{Number of Cells (S)}}
-     \]
+     $$
 
    - **PC values** are approximate:
-     - 5-inch propellers: \( PC \approx 9{,}600 \)  
-     - 6-inch propellers: \( PC \approx 6{,}400 \)  
-     - 7-inch propellers: \( PC \approx 7{,}600 \)
+     - 5-inch propellers: $PC \approx 9600$  
+     - 6-inch propellers: $PC \approx 6400$  
+     - 7-inch propellers: $PC \approx 7600$
 
    **Example**:  
    For a 7-inch propeller on a 4S LiPo battery:
-   \[
-   \text{Required KV} = \frac{7,600}{4} = 1,900 \, \text{KV}
-   \]
+   $$
+   \text{Required KV} = \frac{7600}{4} = 1900 \, \text{KV}
+   $$
 
    This formula provides a ballpark figure; in practice, many builders choose slightly lower or higher KV depending on their desired balance between top-end speed, efficiency, and control feel.
 
@@ -74,20 +74,20 @@ Drone motors aren’t all created equal. Their characteristics—KV, torque, and
 2. **Stator Volume Calculation**  
    - The **stator volume** is a rough proxy for motor torque capability.  
    - Formula:  
-     \[
+     $$
      \text{Stator Volume} = \pi \times \left(\frac{\text{Diameter}}{2}\right)^2 \times \text{Height}
-     \]
+     $$
 
    **Example**:  
    - A *2205 motor*:  
-     - Radius = \( 22/2 = 11 \, \text{mm} \)  
-     - Height = \( 5 \, \text{mm} \)  
-     - Volume \(\approx \pi \times 11^2 \times 5 \approx 600 \, \text{mm}^3\)
+     - Radius = $22/2 = 11 \, \text{mm}$  
+     - Height = $5 \, \text{mm}$  
+     - Volume $\approx \pi \times 11^2 \times 5 \approx 600 \, \text{mm}^3$
 
    - A *2506 motor*:  
-     - Radius = \( 25/2 = 12.5 \, \text{mm} \)  
-     - Height = \( 6 \, \text{mm} \)  
-     - Volume \(\approx \pi \times 12.5^2 \times 6 \approx 937 \, \text{mm}^3\)
+     - Radius = $25/2 = 12.5 \, \text{mm}$  
+     - Height = $6 \, \text{mm}$  
+     - Volume $\approx \pi \times 12.5^2 \times 6 \approx 937 \, \text{mm}^3$
 
 3. **Why Stator Volume Matters**  
    - A larger stator volume means more copper windings and a physically larger electromagnetic area, which translates directly to higher torque capabilities.  
