@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Beginner-Friendly',
+    Svg: require('@site/static/img/undraw_beginner_friendly.svg').default, // Replace with an appropriate RC plane-related SVG
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Designed for RC enthusiasts of all levels, from beginners to pros. Get started with building and flying your RC plane quickly.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Comprehensive Guides',
+    Svg: require('@site/static/img/undraw_guides.svg').default, // Replace with an RC plane guide-related SVG
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Learn step-by-step how to design, build, and maintain RC planes. Focus on enjoying the hobby, and let us handle the technical details.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Powered by Passion',
+    Svg: require('@site/static/img/undraw_passion.svg').default, // Replace with an SVG related to passion or creativity
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Built by RC enthusiasts for RC enthusiasts. Constantly updated with the latest tips, tricks, and resources.
       </>
     ),
   },
