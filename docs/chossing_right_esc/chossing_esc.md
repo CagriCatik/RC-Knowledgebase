@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # **Choosing the Right ESC**
 
 An Electronic Speed Controller (ESC) is responsible for driving your motors based on signals from the flight controller. It interprets throttle commands, supplies the correct power to each motor, and can provide telemetry and other advanced features. Choosing an ESC that matches your drone’s power and control requirements ensures smooth, efficient, and reliable flights.
