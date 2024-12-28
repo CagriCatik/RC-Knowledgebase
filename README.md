@@ -1,38 +1,34 @@
-# RC Plane Parts Knowledge Base
+# RC Plane - Knowledge Base
 
 Welcome to the RC Plane Parts Knowledge Base! This repository is a structured collection of guides, tools, and scripts to help enthusiasts, hobbyists, and engineers select and configure the essential components of RC planes effectively.
 
 ## Table of Contents
 
 1. **Getting Started**
-    - [00 Selecting Parts for RC Plane](00_selecting_parts_for_rc_plane.md)
+    - [Selecting Parts for RC Plane](00_selecting_parts_for_rc_plane.md)
+    - [Brushless Motor, ESC, and Propeller](brushless_esc_lipo_propeller.md)
 2. **Motor Selection**
-    - [01 Selecting Brushless Motors](01_selecting_brushless_motor.md)
+    - [Selecting Brushless Motors](01_selecting_brushless_motor.md)
     - [Choosing the Right Brushless Motor](choosing-brushless-motor.md)
     - [Brushless Motors Explained](brushless-motor.md)
 3. **Propeller Selection**
-    - [02 Selecting Propeller](02_selecting_propeller.md)
-4. **ESC (Electronic Speed Controller)**
-    - [03 Selecting ESC](03_selecting_esc.md)
+    - [Selecting Propeller](02_selecting_propeller.md)
+4. **Electronic Speed Controller**
+    - [Selecting ESC](03_selecting_esc.md)
     - [Choosing the Right ESC](chossing-esc.md)
 5. **Battery Selection**
-    - [04 Selecting LiPo Battery](04_selecting_lipo_battery.md)
+    - [Selecting LiPo Battery](04_selecting_lipo_battery.md)
     - [Choosing the Right Battery](choosing-right-battery.md)
-6. **Combined Guides**
-    - [Brushless Motor, ESC, and Propeller](brushless_esc_lipo_propeller.md)
 7. **Drone and Motor Configurations**
     - [Drone Motor Size](drone-motor-size.md)
     - [Optimal Motor for RC Plane](optimal_motor_rc_plane.md)
 8. **Flight Calculations**
     - [Measuring Flight Time](flight-time.md)
     - [Flight Time Measure (Script)](flight-time-measure.md)
-    - [Flight Time Python Scripts](flight_measure_2.py, flight-time.py)
 9. **GUI Tool**
     - [GUI for Flight Tools](gui.py)
 10. **Testing and Prototyping**
     - [Test Script](test.py)
-11. **Future Enhancements**
-    - [Ideas for Expansion](#future-enhancements)
 
 ---
 
@@ -47,9 +43,6 @@ This repository provides step-by-step tutorials for selecting and configuring:
 We provide utility scripts to measure and optimize flight parameters:
 - **Flight-time estimation** scripts to calculate how long your RC plane can stay in the air with a given configuration.
 - A simple **GUI tool** to assist with part selection and parameter calculation.
-
-### Technical Insights
-Detailed explanations of motor sizing, drone motor configurations, and performance trade-offs for hobbyists and engineers alike.
 
 ---
 
@@ -102,7 +95,3 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 ---
 
 Happy flying!
-
----
-
-For any questions or suggestions, feel free to open an issue or contact the repository maintainer.
