@@ -2,5 +2,5 @@
 sidebar_position: 1
 ---
 
-# Choosing the Right Parts
+# Settings for 3D Printer
 
