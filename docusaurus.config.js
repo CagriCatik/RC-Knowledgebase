@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://your-github-username.github.io',
-  baseUrl: '/my-document/',
+  baseUrl: '/My-RC-Plane-Knowledgebase/',
 
   organizationName: 'CagriCatik',
   projectName: 'My-RC-Plane-Knowledgebase',
