@@ -1,16 +1,21 @@
-# **Choosing the Right Brushless Motor for Drones**
+---
+sidebar_position: 1
+---
+
+
+# Choosing the Right Brushless Motor for Drones
 
 When building or upgrading a drone, choosing the right brushless motor is one of the most crucial decisions you’ll make. The motor’s specifications—such as KV rating, torque, size, and compatibility with propellers—can make or break your aircraft’s performance. In this guide, you’ll learn what each parameter means, how they interrelate, and why they matter, particularly for larger drones (like those with 7-inch propellers).
 
 ---
 
-## **1. Understanding Motor Specifications**
+## 1. Understanding Motor Specifications
 
 Drone motors aren’t all created equal. Their characteristics—KV, torque, and physical size—determine how efficiently and powerfully they can drive your propellers. Below are key parameters to understand before selecting a motor.
 
 ---
 
-### **1.1 Motor KV Rating**
+### 1.1 Motor KV Rating
 
 1. **Definition**  
    - **KV** is the number of revolutions per minute (RPM) a motor spins per volt applied, under no load.  
@@ -46,7 +51,7 @@ Drone motors aren’t all created equal. Their characteristics—KV, torque, and
 
 ---
 
-### **1.2 Motor Torque**
+### 1.2 Motor Torque
 
 1. **Definition**  
    - **Torque** is the rotational force the motor can exert on the propeller shaft.  
@@ -64,7 +69,7 @@ Drone motors aren’t all created equal. Their characteristics—KV, torque, and
 
 ---
 
-### **1.3 Motor Size and Stator Volume**
+### 1.3 Motor Size and Stator Volume
 
 1. **Notation**  
    - Motors are commonly labeled as **XXYY**, where:  
@@ -95,11 +100,11 @@ Drone motors aren’t all created equal. Their characteristics—KV, torque, and
 
 ---
 
-## **2. Guidelines for Motor Selection**
+## 2. Guidelines for Motor Selection
 
 When piecing everything together—KV rating, torque needs, propeller diameter, and voltage—you’ll want a structured approach to motor selection.
 
-### **2.1 Recommended Motor Sizes for Propeller Types**
+### 2.1 Recommended Motor Sizes for Propeller Types
 
 Below is a general guideline that combines stator volume requirements and typical KV ranges (for a 4S setup). Adjust these as needed for your specific project:
 
@@ -130,7 +135,7 @@ Below is a general guideline that combines stator volume requirements and typica
 
 ---
 
-### **2.3 Voltage Considerations**
+### 2.3 Voltage Considerations
 
 1. **4S vs. 6S (and Beyond)**  
    - Increasing voltage (e.g., moving from 4S to 6S) raises the motor’s potential RPM and torque.  
@@ -146,11 +151,11 @@ Below is a general guideline that combines stator volume requirements and typica
 
 ---
 
-## **3. Troubleshooting Common Issues**
+## 3. Troubleshooting Common Issues
 
 Even well-chosen motors can run into problems if other aspects of the drone are unbalanced or misconfigured.
 
-### **3.1 Bobbing and Oscillations**
+### 3.1 Bobbing and Oscillations
 
 1. **Symptoms**  
    - Noticeable bounce along the pitch axis, sometimes mistaken for vibrations.  
@@ -165,7 +170,7 @@ Even well-chosen motors can run into problems if other aspects of the drone are 
 
 ---
 
-### **3.2 Vibration**
+### 3.2 Vibration
 
 1. **Symptoms**  
    - Excessive shaking or jello-like video footage.  
@@ -182,7 +187,7 @@ Even well-chosen motors can run into problems if other aspects of the drone are 
 
 ---
 
-## **4. Practical Example: A 7-Inch Drone Build**
+## 4. Practical Example: A 7-Inch Drone Build
 
 Here’s a step-by-step example to illustrate how you might apply these guidelines in a real-world scenario:
 
@@ -205,9 +210,9 @@ Here’s a step-by-step example to illustrate how you might apply these guidelin
 
 ---
 
-## **5. Conclusion**
+## 5. Conclusion
 
-### **Key Takeaways**
+### Key Takeaways
 
 1. **KV Rating**  
    - Determines how fast your motor can spin per volt. A lower KV suits larger props by providing the necessary torque and lower RPMs.
@@ -223,7 +228,7 @@ Here’s a step-by-step example to illustrate how you might apply these guidelin
    - For a 7-inch drone on 4S, motors around 1600 KV and 900+ mm³ stator volume strike a good balance.  
    - Always validate your choice through bench tests, manufacturer guidelines, or community experience.
 
-### **Why It Matters**
+### Why It Matters
 
 Picking the right motor is about more than just ensuring your drone can lift off. It directly influences flight stability, maneuverability, and efficiency. A well-chosen motor not only improves thrust and handling but also enhances the overall flight experience, giving you confidence in the air whether you’re racing, doing freestyle maneuvers, or filming cinematic footage.
 
