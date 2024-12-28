@@ -54,7 +54,7 @@ const config = {
     ({
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Docu Website',
+        title: 'RC-Plane-Knowledgebase',
         logo: {
           alt: 'Docu Logo',
           src: 'img/logo.svg',
