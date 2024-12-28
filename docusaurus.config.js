@@ -6,8 +6,8 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Docu Website',
-  tagline: 'Bring your website to another level',
+  title: 'RC-Plane-Knowledgebase',
+  tagline: 'Bring your Knowledge to another level',
   favicon: 'img/favicon.ico',
 
   url: 'https://your-github-username.github.io',
