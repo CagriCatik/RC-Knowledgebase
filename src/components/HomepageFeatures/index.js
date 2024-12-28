@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Beginner-Friendly',
-    Svg: require('@site/static/img/undraw_beginner_friendly.svg').default, // Replace with an appropriate RC plane-related SVG
+    //Svg: require('@site/static/img/undraw_beginner_friendly.svg').default, // Replace with an appropriate RC plane-related SVG
     description: (
       <>
         Designed for RC enthusiasts of all levels, from beginners to pros. Get started with building and flying your RC plane quickly.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Comprehensive Guides',
-    Svg: require('@site/static/img/undraw_guides.svg').default, // Replace with an RC plane guide-related SVG
+    //Svg: require('@site/static/img/undraw_guides.svg').default, // Replace with an RC plane guide-related SVG
     description: (
       <>
         Learn step-by-step how to design, build, and maintain RC planes. Focus on enjoying the hobby, and let us handle the technical details.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Powered by Passion',
-    Svg: require('@site/static/img/undraw_passion.svg').default, // Replace with an SVG related to passion or creativity
+    //Svg: require('@site/static/img/undraw_passion.svg').default, // Replace with an SVG related to passion or creativity
     description: (
       <>
         Built by RC enthusiasts for RC enthusiasts. Constantly updated with the latest tips, tricks, and resources.
