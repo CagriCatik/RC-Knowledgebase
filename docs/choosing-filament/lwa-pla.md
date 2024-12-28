@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Lightweight PLA (LW-PLA)
+# Lightweight PLA
 
 Lightweight PLA (LW-PLA) is a specialized 3D printing filament engineered to produce low-density, lightweight parts, making it particularly advantageous for applications like remote-controlled (RC) planes where weight reduction is crucial. Unlike standard PLA, LW-PLA utilizes active foaming technology that activates at higher extrusion temperatures, causing the material to expand and decrease in density.
 
