@@ -57,7 +57,7 @@ const config = {
         title: 'RC-Plane-Knowledgebase',
         logo: {
           alt: 'Docu Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
