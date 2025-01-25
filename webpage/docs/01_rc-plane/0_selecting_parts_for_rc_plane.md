@@ -1,4 +1,4 @@
-# Selecting Parts for an RC Airplane
+# Electronics of an RC Plane
 
 
 Selecting the appropriate components for a radio-controlled (RC) airplane is pivotal to ensuring optimal performance, safety, and reliability. This guide provides a structured methodology for choosing the core power-system components of an RC airplane:
