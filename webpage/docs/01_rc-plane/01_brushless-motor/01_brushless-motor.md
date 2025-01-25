@@ -1,4 +1,4 @@
-# Brushless Motor
+# Introduction
 
 Brushless motors are the workhorses of modern RC models, drones, and various precision devices, offering unmatched efficiency and reliability compared to brushed alternatives. Despite their ubiquity, understanding the numbers and specifications printed on these motors can be challenging, particularly for those new to the field. This tutorial provides an in-depth explanation of brushless motor specifications, focusing on their precise meanings and implications for performance.
 
