@@ -1,16 +1,16 @@
 // @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
 
 import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'RC-Plane-Knowledgebase',
-  tagline: 'Bring your Knowledge to another level',
+  title: 'RC Plane Knowledgebase',  // Improved title formatting
+  tagline: 'Bring your RC Aircraft Knowledge to another level',  // More specific tagline
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-github-username.github.io',
+  // Updated URL with correct GitHub username
+  url: 'https://CagriCatik.github.io',
   baseUrl: '/My-RC-Plane-Knowledgebase/',
 
   organizationName: 'CagriCatik',
@@ -32,15 +32,14 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/CagriCatik/My-RC-Plane-Knowledgebase/edit/main/',
-          remarkPlugins: [require('remark-math')], // Add remark-math plugin
-          rehypePlugins: [require('rehype-katex')], // Add rehype-katex plugin
+          // Added /tree/main/ to edit URL path
+          editUrl: 'https://github.com/CagriCatik/My-RC-Plane-Knowledgebase/tree/main/',
+          remarkPlugins: [require('remark-math')],
+          rehypePlugins: [require('rehype-katex')],
         },
         blog: {
           showReadingTime: true,
-          editUrl:
-            'https://github.com/CagriCatik/My-RC-Plane-Knowledgebase/edit/main/',
+          editUrl: 'https://github.com/CagriCatik/My-RC-Plane-Knowledgebase/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -52,11 +51,21 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      // Added custom social card (you should create this image)
+      image: 'img/rc-plane-social-card.jpg',
+      // Added Katex CSS for math support
+      stylesheets: [
+        {
+          href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+          type: 'text/css',
+          integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+          crossorigin: 'anonymous',
+        },
+      ],
       navbar: {
-        title: 'RC-Plane-Knowledgebase',
+        title: 'RC Plane Knowledgebase',
         logo: {
-          alt: 'Docu Logo',
+          alt: 'RC Plane Knowledgebase Logo',  // Improved alt text
           src: 'img/logo.png',
         },
         items: [
@@ -81,7 +90,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Documentation',
+                label: 'Getting Started',
                 to: '/docs/getting-started',
               },
             ],
@@ -90,16 +99,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'RC Groups Forum',
+                href: 'https://www.rcgroups.com/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Discord Server',
+                href: 'https://discord.gg/example-rc-community',  // Update with actual link
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'YouTube',
+                href: 'https://youtube.com/example-rc-channel',
               },
             ],
           },
@@ -117,11 +126,14 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Docu Website, Built with Docusaurus.`,
+        // Updated copyright notice
+        copyright: `Copyright © ${new Date().getFullYear()} RC Plane Knowledgebase. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        // Added additional language support (optional)
+        additionalLanguages: ['bash', 'diff', 'json'],
       },
     }),
 };

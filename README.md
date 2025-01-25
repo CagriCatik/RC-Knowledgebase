@@ -1,97 +1,74 @@
-# RC Plane - Knowledge Base
+# ✈️ RC Engineering Hub 🚗
 
-Welcome to the RC Plane Parts Knowledge Base! This repository is a structured collection of guides, tools, and scripts to help enthusiasts, hobbyists, and engineers select and configure the essential components of RC planes effectively.
+[![WTFPL License](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/) [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](CONTRIBUTING.md)  ![Deploy Docusaurus](https://github.com/CagriCatik/RC-Knowledgebase/actions/workflows/deploy.yml/badge.svg)
 
-## Table of Contents
+**Universal Toolkit for RC Vehicles - Master Planes, Cars & More!**  
 
-1. **Getting Started**
-    - [Selecting Parts for RC Plane](00_selecting_parts_for_rc_plane.md)
-    - [Brushless Motor, ESC, and Propeller](brushless_esc_lipo_propeller.md)
-2. **Motor Selection**
-    - [Selecting Brushless Motors](01_selecting_brushless_motor.md)
-    - [Choosing the Right Brushless Motor](choosing-brushless-motor.md)
-    - [Brushless Motors Explained](brushless-motor.md)
-3. **Propeller Selection**
-    - [Selecting Propeller](02_selecting_propeller.md)
-4. **Electronic Speed Controller**
-    - [Selecting ESC](03_selecting_esc.md)
-    - [Choosing the Right ESC](chossing-esc.md)
-5. **Battery Selection**
-    - [Selecting LiPo Battery](04_selecting_lipo_battery.md)
-    - [Choosing the Right Battery](choosing-right-battery.md)
-7. **Drone and Motor Configurations**
-    - [Drone Motor Size](drone-motor-size.md)
-    - [Optimal Motor for RC Plane](optimal_motor_rc_plane.md)
-8. **Flight Calculations**
-    - [Measuring Flight Time](flight-time.md)
-    - [Flight Time Measure (Script)](flight-time-measure.md)
-9. **GUI Tool**
-    - [GUI for Flight Tools](gui.py)
-10. **Testing and Prototyping**
-    - [Test Script](test.py)
+The definitive resource for RC enthusiasts designing high-performance vehicles. Contains cross-disciplinary tools and specialized guides for both aerial and ground RC systems.
 
----
+![RC Vehicles](https://via.placeholder.com/800x400.png?text=RC+Plane+and+Car+Components)  
+*(Example image - replace with your graphic)*
 
-## Repository Highlights
+## 🌟 Universal Features
 
-### Guides and Tutorials
-This repository provides step-by-step tutorials for selecting and configuring:
-- Brushless motors, ESCs, propellers, and LiPo batteries
-- Combined setup recommendations for optimal performance
+- **Multi-Platform Calculators**: Flight/drive time estimation, power system analysis
+- **Dual-Use Tools**: Python GUI supporting both plane and car configurations
+- **Shared Physics Engine**: Common core for aerodynamic/terrain dynamics
+- **Modular Design**: Mix-and-match components between vehicle types
 
-### Python Scripts
-We provide utility scripts to measure and optimize flight parameters:
-- **Flight-time estimation** scripts to calculate how long your RC plane can stay in the air with a given configuration.
-- A simple **GUI tool** to assist with part selection and parameter calculation.
+## 🛠️ Table of Contents
 
----
+### Shared Core Components
+| Component              | Resources |
+|------------------------|-----------|
+| **Brushless Motors**   | [Cross-Platform Guide](01_selecting_brushless_motor.md) • [KV Ratings Explained](brushless-motor.md) |
+| **LiPo Batteries**     | [Capacity vs C-Rating](04_selecting_lipo_battery.md) • [Safety Handbook](battery-safety.md) |
+| **Speed Controllers**  | [ESC Selection Matrix](03_selecting_esc.md) • [Waterproofing Guide](esc-waterproofing.md) |
 
-## Future Enhancements
+### Plane-Specific Systems
+- 🛩️ [Propeller Aerodynamics](02_selecting_propeller.md)
+- ✈️ [Wing Loading Calculator](wing-loading.md)
+- 🪂 [Flight Stability Systems](flight-stability.md)
 
-Here are potential ideas to further enhance this repository:
+### Car-Specific Systems
+- 🏎️ [Gear Ratio Calculator](gear-ratios.md)
+- 🚗 [Differential Setup Guide](differential-settings.md)
+- 🏁 [Suspension Tuning Handbook](suspension-tuning.md)
 
-1. **RC Part Comparisons**
-   - Add comparison charts for motors, ESCs, batteries, and propellers based on brand, size, weight, and performance.
+### Universal Tools
+```bash
+📊 Cross-Platform GUI          → gui.py
+⏱️ Runtime Calculator          → runtime-calculator.md
+🔋 Power System Analyzer       → power-analysis.py
+```
 
-2. **Additional Guides**
-   - Add guides for advanced topics like servo selection, flight controller setup, and telemetry modules.
-   - Create a dedicated section for "Troubleshooting Common Issues."
+## 🚀 Getting Started
 
-3. **Simulation and Testing**
-   - Develop simulation scripts or integrate with existing software like XFLR5 for aerodynamic analysis.
-   - Include a section for "Data Logging and Analysis" to record in-flight performance.
+**For RC Planes:**
+1. Start with [Aircraft System Setup](00_selecting_parts_for_rc_plane.md)
+2. Use [Flight Time Calculator](flight-time.md)
 
-4. **Visual Enhancements**
-   - Add diagrams, images, and charts to visually explain concepts.
-   - Create interactive flowcharts for component selection.
+**For RC Cars:**
+1. Begin with [Ground Vehicle Power Systems](car_power_systems.md)
+2. Run [Torque Calculation Script](torque-calculator.py)
 
-5. **Community Contributions**
-   - Add a section for "User Contributions" to allow others to submit guides, scripts, and insights.
+## 🌍 Documentation Portal
 
-6. **Localization Support**
-   - Translate guides into multiple languages for a wider audience.
+Our **[Live Portal](https://yourdomain.com)** features vehicle-specific interfaces:
 
-7. **Expand Python Tools**
-   - Add Python scripts to calculate thrust-to-weight ratio, stall speed, and climb rate.
-   - Develop a Python library for RC plane part calculations.
+### Local Development
+```bash
+yarn install   # Install dependencies
+yarn start     # Launch local server @ http://localhost:3000
+```
 
----
+## 🤝 Contribution Guidelines
 
-## How to Contribute
-
-We welcome contributions from the community! Here's how you can help:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature-branch-name`)
-3. Commit your changes (`git commit -m 'Add your message here'`)
-4. Push to your fork (`git push origin feature-branch-name`)
-5. Submit a Pull Request
-
----
+1. Fork repository
+2. Use branch naming:  
+   `feat/planes/[feature]` or `feat/cars/[feature]`
+3. Follow [Style Guide](STYLEGUIDE.md)
 
 ## License
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the [![WTFPL License](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 
----
-
-Happy flying!
