@@ -1,4 +1,4 @@
-# Choosing the Right Battery for Drones
+# Choosing the Right Battery
 
 Batteries are the power source for your drone. They determine how long you can fly, how much thrust you can generate (in conjunction with the motors and ESCs), and whether your drone can handle high-current maneuvers without voltage sag. In this guide, we’ll look at the key factors to consider when choosing a LiPo (Lithium Polymer) battery—currently the most common battery type for multirotors.
 

@@ -125,8 +125,3 @@ Add capacitors across servo power and signal lines.
 2. **Check Signals:** Use an oscilloscope to verify PWM stability.  
 3. **Monitor Power:** Measure voltage under load with a multimeter.  
 4. **Code Test:** Run minimal code to rule out software issues.  
-
----
-
-## **Conclusion**  
-By addressing power, noise, and timing issues—especially in Arduino projects—servo jitter can be minimized. For persistent cases, upgrade components or use dedicated PWM hardware. Let me know if you need further help! 😊

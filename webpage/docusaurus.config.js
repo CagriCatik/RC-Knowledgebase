@@ -94,6 +94,13 @@ const config = {
             position: 'left',
             label: '3D Printing 🖨️',
           },
+          
+          {
+            type: 'docSidebar',
+            sidebarId: 'faqDimSidebar',
+            position: 'left',
+            label: 'FAQ ❓',
+          },
 
           { to: '/blog', label: 'Blog', position: 'left' },
           {
