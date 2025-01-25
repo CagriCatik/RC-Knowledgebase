@@ -1,32 +1,35 @@
 # ✈️ RC Engineering Hub 🚗
 
+Welcome to the RC Engineering Hub, your ultimate resource for all things related to remote-controlled (RC) planes, cars, and 3D printing for RC customization. Whether you're a beginner or an advanced enthusiast, our comprehensive guides and tutorials will help you elevate your RC knowledge to the next level.
+
 [![WTFPL License](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/) [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](CONTRIBUTING.md)  ![Deploy Docusaurus](https://github.com/CagriCatik/RC-Knowledgebase/actions/workflows/deploy.yml/badge.svg)
 
-**Universal Toolkit for RC Vehicles - Master Planes, Cars & More!**  
+## 🛫 Getting Started
 
-The definitive resource for RC enthusiasts designing high-performance vehicles. Contains cross-disciplinary tools and specialized guides for both aerial and ground RC systems.
+New to the world of RC? Start here! Our guides will help you understand the basics and get you up and running in no time.
 
-## 🚀 Getting Started
+## ✈️ RC Plane Guides
 
-### Plane-Specific Systems
-- 🛩️ [Propeller Aerodynamics](02_selecting_propeller.md)
-- ✈️ [Wing Loading Calculator](wing-loading.md)
-- 🪂 [Flight Stability Systems](flight-stability.md)
+Master the skies with our comprehensive RC plane guides. From beginner setups to advanced aerobatics, we’ve got you covered.
 
-### Car-Specific Systems
-- 🏎️ [Gear Ratio Calculator](gear-ratios.md)
-- 🚗 [Differential Setup Guide](differential-settings.md)
-- 🏁 [Suspension Tuning Handbook](suspension-tuning.md)
+## 🏎️ RC Car Guides
 
-## 🌍 Documentation Portal
+Speed up your RC car knowledge! Learn about tuning, maintenance, and racing techniques to dominate the track.
 
-Our **[Live Portal](https://yourdomain.com)** features vehicle-specific interfaces:
+- **Product Comparisons**: Compare RC controllers, batteries, and upgrade kits side-by-side. Make informed decisions with our expert analysis.
 
-### Local Development
-```bash
-yarn install   # Install dependencies
-yarn start     # Launch local server @ http://localhost:3000
-```
+## 🖨️ 3D Printing
 
-## License
-This project is licensed under the [![WTFPL License](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+Dive into the world of 3D printing for RC customization. Get tips, troubleshooting help, and design inspiration.
+
+- **Component Compatibility**: Find the perfect match for your RC parts. Detailed matrices for transmitters, receivers, ESCs, and batteries.
+
+## 📜 License
+
+This project is licensed under the [WTFPL License](http://www.wtfpl.net/about/). Feel free to use, modify, and distribute as you see fit.
+
+---
+
+We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to get started.
+
+Happy flying, driving, and printing! 🚀
