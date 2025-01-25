@@ -57,9 +57,9 @@ Batteries are the power source for your drone. They determine how long you can f
 1. **Definition**  
    - The C-rating indicates the **maximum safe continuous current draw** relative to the battery’s capacity.  
    - The formula for the **maximum continuous current** is:
-     \[
+     $$
      \text{Max Current} = \text{Capacity (Ah)} \times \text{C-Rating}
-     \]
+     $$
      where Capacity is in amp-hours (Ah). (For milliamp-hours, convert by dividing by 1000.)
 
 2. **Example**  

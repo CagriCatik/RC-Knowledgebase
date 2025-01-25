@@ -15,26 +15,26 @@ In a brushless motor used for RC planes:
 
 As the stator’s magnetic field interacts with the rotor’s permanent magnets, a force is produced at a particular radius, generating torque. A simplified expression for the force between magnetized surfaces is:
 
-\[
+$$
 F = \frac{B^2 \, A}{2 \, \mu_0},
-\]
+$$
 
 where  
-- \(B\) is the magnetic flux density (in teslas),  
-- \(A\) is the area of interaction (in square meters),  
-- \(\mu_0\) is the permeability of free space (\(\approx 4\pi \times 10^{-7} \,\text{H/m}\)).
+- $B$ is the magnetic flux density (in teslas),  
+- $A$ is the area of interaction (in square meters),  
+- $\mu_0$ is the permeability of free space ($\approx 4\pi \times 10^{-7} \,\text{H/m}$).
 
 > **Note:** This equation is an approximation based on Maxwell stress considerations. Real-world motors have more complex factors like air gap, geometry, and magnetic materials, so use it primarily for conceptual understanding, not exact design.
 
 ### 1.2 From Force to Torque
 
-Torque \(\tau\) in a motor is:
+Torque $\tau$ in a motor is:
 
-\[
+$$
 \tau = F \times r,
-\]
+$$
 
-where \(r\) is the distance from the motor’s rotational axis. By substituting the approximate force expression, it becomes evident that **stator volume** (i.e., the cross-sectional area times stator height) is a key factor in determining torque capacity.
+where $r$ is the distance from the motor’s rotational axis. By substituting the approximate force expression, it becomes evident that **stator volume** (i.e., the cross-sectional area times stator height) is a key factor in determining torque capacity.
 
 ---
 
@@ -42,7 +42,7 @@ where \(r\) is the distance from the motor’s rotational axis. By substituting 
 
 ### 2.1 A Primary Determinant of Torque
 
-In modern brushless motors, **stator volume** typically serves as the main driver of raw torque potential. Reputable brands often use similarly high-quality materials—such as N52 magnets, oxygen-free copper windings, and laminated silicon steel—leading to only minor variations in maximum flux density \(B\). Hence, if you want more torque, look first to **increasing stator volume**.
+In modern brushless motors, **stator volume** typically serves as the main driver of raw torque potential. Reputable brands often use similarly high-quality materials—such as N52 magnets, oxygen-free copper windings, and laminated silicon steel—leading to only minor variations in maximum flux density $B$. Hence, if you want more torque, look first to **increasing stator volume**.
 
 ### 2.2 Geometry vs. Volume
 
@@ -54,30 +54,30 @@ A common misconception is that a “wide” motor automatically produces more to
 
 ### 3.1 Reserve Torque and Acceleration
 
-For RC planes, having enough **reserve torque** is crucial for maneuvers such as steep climbs, loops, or rapid throttle transitions. One way to quantify motor responsiveness is via angular acceleration \(\dot{\omega}\):
+For RC planes, having enough **reserve torque** is crucial for maneuvers such as steep climbs, loops, or rapid throttle transitions. One way to quantify motor responsiveness is via angular acceleration $\dot{\omega}$:
 
-\[
+$$
 \dot{\omega} = \frac{\tau_\text{reserve}}{I},
-\]
+$$
 
 where:  
-- \(\tau_\text{reserve}\) is the torque available beyond what is needed to sustain a given RPM (e.g., straight-and-level flight),  
-- \(I\) is the total rotational inertia of the system (the motor’s rotor plus the propeller).
+- $\tau_\text{reserve}$ is the torque available beyond what is needed to sustain a given RPM (e.g., straight-and-level flight),  
+- $I$ is the total rotational inertia of the system (the motor’s rotor plus the propeller).
 
 ### 3.2 Wide (Pancake) Motors: Pros and Cons
 
-Wider-diameter motors can enhance cooling and sometimes accommodate larger stator volumes, but they also **increase the rotor’s moment of inertia**. A simplified approximation for rotor inertia, \(I_\text{bell}\), is:
+Wider-diameter motors can enhance cooling and sometimes accommodate larger stator volumes, but they also **increase the rotor’s moment of inertia**. A simplified approximation for rotor inertia, $I_\text{bell}$, is:
 
-\[
+$$
 I_\text{bell} \propto \rho \, V_{\text{bell}} \, r^2,
-\]
+$$
 
 where  
-- \(\rho\) is material density,  
-- \(V_{\text{bell}}\) is the rotor (bell) volume,  
-- \(r\) is the rotor radius.
+- $\rho$ is material density,  
+- $V_{\text{bell}}$ is the rotor (bell) volume,  
+- $r$ is the rotor radius.
 
-Because \(r\) appears as a squared factor, a bigger diameter can substantially raise rotational inertia, potentially reducing how quickly the motor can spool up or slow down. If the stator volume (and thus the motor’s torque output) does not increase enough to counterbalance this added inertia, the motor may feel sluggish during aggressive maneuvers.
+Because $r$ appears as a squared factor, a bigger diameter can substantially raise rotational inertia, potentially reducing how quickly the motor can spool up or slow down. If the stator volume (and thus the motor’s torque output) does not increase enough to counterbalance this added inertia, the motor may feel sluggish during aggressive maneuvers.
 
 ### 3.3 Cooling Considerations
 
@@ -118,9 +118,9 @@ A motor’s kV rating specifies its **RPM per volt** under no-load conditions. T
 
 A **high kV motor** generally spins the prop faster (assuming the same battery voltage) but may suffer in overall efficiency if you need a lot of thrust at lower RPM. A **lower kV motor** may provide better torque at modest RPM and be more efficient under heavier load, albeit with a lower theoretical top-end speed unless you increase voltage or change the prop.
 
-### 6.2 I\(^2\)R Losses and Efficiency
+### 6.2 I$^2$R Losses and Efficiency
 
-High kV motors demand larger currents to achieve a given torque, producing more heat (I\(^2\)R losses) in motor windings and in the ESC. Consequently, higher kV motors can suffer in thrust-per-watt efficiency if you tend to fly at higher torque settings. On the other hand, lower kV motors can sustain higher torques more efficiently, making them a frequent choice for heavier models or slower-flying aircraft that need ample thrust without excessive RPM.
+High kV motors demand larger currents to achieve a given torque, producing more heat (I$^2$R losses) in motor windings and in the ESC. Consequently, higher kV motors can suffer in thrust-per-watt efficiency if you tend to fly at higher torque settings. On the other hand, lower kV motors can sustain higher torques more efficiently, making them a frequent choice for heavier models or slower-flying aircraft that need ample thrust without excessive RPM.
 
 ### 6.3 Battery Constraints
 
