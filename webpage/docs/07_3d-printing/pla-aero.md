@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # PLA Aero
 
 PLA Aero is a specialized 3D printing filament developed by Bambu Lab, designed to produce lightweight, low-density parts through foaming at high extrusion temperatures. This makes it particularly suitable for applications such as unmanned aerial vehicles (UAVs), aerodynamic models, and gliders. 

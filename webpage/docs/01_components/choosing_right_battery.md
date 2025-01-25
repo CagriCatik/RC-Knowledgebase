@@ -1,8 +1,4 @@
----
-sidebar_position: 1
----
-
-# **Choosing the Right Battery for Drones**
+# Choosing the Right Battery for Drones
 
 Batteries are the power source for your drone. They determine how long you can fly, how much thrust you can generate (in conjunction with the motors and ESCs), and whether your drone can handle high-current maneuvers without voltage sag. In this guide, we’ll look at the key factors to consider when choosing a LiPo (Lithium Polymer) battery—currently the most common battery type for multirotors.
 
@@ -63,7 +59,7 @@ Batteries are the power source for your drone. They determine how long you can f
      where Capacity is in amp-hours (Ah). (For milliamp-hours, convert by dividing by 1000.)
 
 2. **Example**  
-   - A 1500mAh (1.5Ah) battery with a 40C rating can theoretically supply $ 1.5 \times 40 = 60A $continuously.
+   - A 1500mAh (1.5Ah) battery with a 40C rating can theoretically supply $1.5 \times 40 = 60A$continuously.
 
 3. **Why It Matters**  
    - If you exceed this current, the battery may overheat, swell (puff), or get permanently damaged.  

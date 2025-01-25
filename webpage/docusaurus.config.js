@@ -17,8 +17,8 @@ const config = {
   projectName: 'RC-Knowledgebase',
   deploymentBranch: 'gh-pages',
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
 
   i18n: {
     defaultLocale: 'en',
@@ -116,23 +116,6 @@ const config = {
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'RC Groups Forum',
-                href: 'https://www.rcgroups.com/',
-              },
-              {
-                label: 'Discord Server',
-                href: 'https://discord.gg/example-rc-community',  // Update with actual link
-              },
-              {
-                label: 'YouTube',
-                href: 'https://youtube.com/example-rc-channel',
-              },
-            ],
-          },
-          {
             title: 'More',
             items: [
               {
@@ -141,13 +124,13 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/CagriCatik/My-RC-Plane-Knowledgebase',
+                href: 'https://github.com/CagriCatik/RC-Knowledgebase',
               },
             ],
           },
         ],
         // Updated copyright notice
-        copyright: `Copyright © ${new Date().getFullYear()} RC Plane Knowledgebase. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} RC Knowledgebase. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

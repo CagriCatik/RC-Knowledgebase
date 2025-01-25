@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Choosing the Right Filament for 3D Printed RC Planes
 
 3D printing has revolutionized the way hobbyists and engineers approach remote-controlled (RC) plane design and construction. However, selecting the right filament is crucial for achieving optimal performance, durability, and weight balance. This guide provides a detailed overview to help you make an informed decision when choosing the best filament for your 3D printed RC plane.
