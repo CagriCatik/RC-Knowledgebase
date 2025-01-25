@@ -1,4 +1,4 @@
-# Selecting a Brushless Motor, ESC, LiPo Battery and Propeller for an RC Airplane
+# Selecting Parts for an RC Airplane
 
 ## 1. Introduction
 

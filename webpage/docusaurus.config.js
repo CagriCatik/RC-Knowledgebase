@@ -76,21 +76,21 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'planeSidebar',
             position: 'left',
             label: 'RC Plane 🛩️',
           },
 
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'carSidebar',
             position: 'left',
             label: 'RC Car 🏎️',
           },
 
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'threeDimSidebar',
             position: 'left',
             label: '3D Printing 🖨️',
           },

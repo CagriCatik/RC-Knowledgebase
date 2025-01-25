@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Heat-Set Inserts for 3D Printing
 
 ## Introduction

@@ -1,4 +1,4 @@
-# Guide to Printing with ASA Aero Filament for Aircraft Models  
+# ASA Aero Filament
 
 ## **Purpose**  
 This guide provides detailed instructions for slicing and printing lightweight aircraft models using **ASA Aero filament**. Designed to optimize foaming properties, ASA Aero reduces print density while maintaining strength. Follow this guide to achieve high-quality prints and avoid common pitfalls.  
