@@ -1,4 +1,4 @@
-# Heat-Set Inserts for 3D Printing
+# Heat-Set Inserts
 
 Heat-set inserts are indispensable for creating robust, reusable threads in 3D-printed parts. Whether you’re prototyping functional components or assembling modular designs, this guide equips you with the knowledge to integrate threaded brass inserts seamlessly.  
 
