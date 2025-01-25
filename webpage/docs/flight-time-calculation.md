@@ -4,22 +4,22 @@
 
 1. **Convert mAh to Ah**  
    - Battery capacity is often stated in milliamp-hours (mAh). To work in amperes (A), we convert mAh to amp-hours (Ah):  
-     \[
+     $$
      \text{Ah} = \frac{\text{mAh}}{1000}
-     \]
+     $$
 
 2. **Determine Average Current Draw**  
-   - Suppose your drone (including motors, electronics, etc.) pulls an **average current** of \(I_\text{avg}\) amperes during flight. This average might come from flight tests, online thrust/battery current charts, or an onboard power meter.
+   - Suppose your drone (including motors, electronics, etc.) pulls an **average current** of $I_\text{avg}$ amperes during flight. This average might come from flight tests, online thrust/battery current charts, or an onboard power meter.
 
 3. **Calculate Theoretical Flight Time**  
    - The theoretical flight time in hours is then:  
-     \[
+     $$
      \text{Flight Time (hours)} = \frac{\text{Battery Capacity (Ah)}}{I_\text{avg} (\text{A})}
-     \]
+     $$
    - To convert to minutes, multiply by 60:  
-     \[
+     $$
      \text{Flight Time (minutes)} = \frac{\text{Battery Capacity (Ah)}}{I_\text{avg} (\text{A})} \times 60
-     \]
+     $$
 
 ---
 
@@ -28,13 +28,13 @@
 - **Battery Capacity**: 1500mAh (which is 1.5Ah)  
 - **Average Current Draw**: 15A in flight
 
-\[
+$$
 \text{Flight Time (hours)} = \frac{1.5 \,\text{Ah}}{15 \,\text{A}} = 0.1 \,\text{hours} 
-\]  
+$$  
 
-\[
+$$
 \text{Flight Time (minutes)} = 0.1 \,\text{hours} \times 60 = 6 \,\text{minutes}
-\]
+$$
 
 This means you can **theoretically** fly for about 6 minutes at a consistent 15A draw.
 
@@ -68,9 +68,9 @@ This means you can **theoretically** fly for about 6 minutes at a consistent 15A
 
 1. **Estimate Your Average Current Draw**: Gather data from flight tests or from motor thrust/current charts.  
 2. **Use the Basic Formula**:  
-   \[
+   $$
    \text{Flight Time (minutes)} \approx \frac{\text{mAh}/1000}{I_\text{avg} (\text{A})} \times 60
-   \]  
+   $$  
 3. **Apply Real-World Adjustments**:  
    - Consider the 80% rule or add a buffer if you want to preserve battery health.  
    - Factor in aggressive flight maneuvers or external conditions that can increase your drone’s current draw.

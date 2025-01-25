@@ -40,6 +40,11 @@ const config = {
         blog: {
           showReadingTime: true,
           editUrl: 'https://github.com/CagriCatik/RC-Knowledgebase/tree/main/',
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+          remarkPlugins: [require('remark-math')],
+          rehypePlugins: [require('rehype-katex')],
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

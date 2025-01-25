@@ -18,9 +18,9 @@ Batteries are the power source for your drone. They determine how long you can f
 
 2. **Series Connection (S)**  
    - Each cell adds to the total voltage. For example:  
-     - **2S LiPo**: \( 2 \times 3.7 = 7.4 \,\text{V (nominal)}, \; 2 \times 4.2 = 8.4 \,\text{V (fully charged)} \)  
-     - **3S LiPo**: \( 3 \times 3.7 = 11.1 \,\text{V (nominal)}, \; 3 \times 4.2 = 12.6 \,\text{V (fully charged)} \)  
-     - **4S LiPo**: \( 4 \times 3.7 = 14.8 \,\text{V (nominal)}, \; 4 \times 4.2 = 16.8 \,\text{V (fully charged)} \)
+     - **2S LiPo**: $ 2 \times 3.7 = 7.4 \,\text{V (nominal)}, \; 2 \times 4.2 = 8.4 \,\text{V (fully charged)} $ 
+     - **3S LiPo**: $ 3 \times 3.7 = 11.1 \,\text{V (nominal)}, \; 3 \times 4.2 = 12.6 \,\text{V (fully charged)} $ 
+     - **4S LiPo**: $ 4 \times 3.7 = 14.8 \,\text{V (nominal)}, \; 4 \times 4.2 = 16.8 \,\text{V (fully charged)} $
 
 3. **Why Voltage Matters**  
    - **Motor RPM**: Brushless motors (rated in KV) spin at a speed proportional to the voltage. Higher voltage → higher potential RPM and torque (with a suitable motor).  
@@ -63,7 +63,7 @@ Batteries are the power source for your drone. They determine how long you can f
      where Capacity is in amp-hours (Ah). (For milliamp-hours, convert by dividing by 1000.)
 
 2. **Example**  
-   - A 1500mAh (1.5Ah) battery with a 40C rating can theoretically supply \( 1.5 \times 40 = 60A \) continuously.
+   - A 1500mAh (1.5Ah) battery with a 40C rating can theoretically supply $ 1.5 \times 40 = 60A $continuously.
 
 3. **Why It Matters**  
    - If you exceed this current, the battery may overheat, swell (puff), or get permanently damaged.  
