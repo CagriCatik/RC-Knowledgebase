@@ -6,9 +6,6 @@
 
 The definitive resource for RC enthusiasts designing high-performance vehicles. Contains cross-disciplinary tools and specialized guides for both aerial and ground RC systems.
 
-![RC Vehicles](https://via.placeholder.com/800x400.png?text=RC+Plane+and+Car+Components)  
-*(Example image - replace with your graphic)*
-
 ## 🚀 Getting Started
 
 ### Plane-Specific Systems
