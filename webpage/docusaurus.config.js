@@ -5,16 +5,16 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'RC Plane Knowledgebase',  // Improved title formatting
-  tagline: 'Bring your RC Aircraft Knowledge to another level',  // More specific tagline
+  title: 'RC Knowledgebase',  // Improved title formatting
+  tagline: 'Bring your RC Knowledge to another level',  // More specific tagline
   favicon: 'img/favicon.ico',
 
   // Updated URL with correct GitHub username
   url: 'https://CagriCatik.github.io',
-  baseUrl: '/My-RC-Plane-Knowledgebase/',
+  baseUrl: '/RC-Knowledgebase/',
 
   organizationName: 'CagriCatik',
-  projectName: 'My-RC-Plane-Knowledgebase',
+  projectName: 'RC-Knowledgebase',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'warn',
@@ -33,13 +33,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Added /tree/main/ to edit URL path
-          editUrl: 'https://github.com/CagriCatik/My-RC-Plane-Knowledgebase/tree/main/',
+          editUrl: 'https://github.com/CagriCatik/RC-Knowledgebase/tree/main/',
           remarkPlugins: [require('remark-math')],
           rehypePlugins: [require('rehype-katex')],
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/CagriCatik/My-RC-Plane-Knowledgebase/tree/main/',
+          editUrl: 'https://github.com/CagriCatik/RC-Knowledgebase/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -63,9 +63,9 @@ const config = {
         },
       ],
       navbar: {
-        title: 'RC Plane Knowledgebase',
+        title: 'RC Knowledgebase',
         logo: {
-          alt: 'RC Plane Knowledgebase Logo',  // Improved alt text
+          alt: 'RC Knowledgebase Logo',  // Improved alt text
           src: 'img/logo.png',
         },
         items: [
