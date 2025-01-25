@@ -105,32 +105,8 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Getting Started',
-                to: '/docs/getting-started',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/CagriCatik/RC-Knowledgebase',
-              },
-            ],
-          },
-        ],
         // Updated copyright notice
-        copyright: `Copyright © ${new Date().getFullYear()} RC Knowledgebase. Built with Docusaurus.`,
+        copyright: `RC Knowledgebase`,
       },
       prism: {
         theme: prismThemes.github,
