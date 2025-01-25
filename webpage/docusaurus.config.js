@@ -73,8 +73,23 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Documentation',
+            label: 'RC Plane 🛩️',
           },
+
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'RC Car 🏎️',
+          },
+
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: '3D Printing 🖨️',
+          },
+
           { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/CagriCatik/My-RC-Plane-Knowledgebase',
