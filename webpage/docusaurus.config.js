@@ -91,6 +91,13 @@ const config = {
 
           {
             type: "docSidebar",
+            sidebarId: "controllerSidebar",
+            position: "left",
+            label: "Controller 🎮",
+          },
+
+          {
+            type: "docSidebar",
             sidebarId: "threeDimSidebar",
             position: "left",
             label: "3D Printing 🖨️",
