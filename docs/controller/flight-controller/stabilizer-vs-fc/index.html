@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-controller/flight-controller/stabilizer-vs-fc" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Stabilizer or Flight Controller | RC Knowledgebase</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://CagriCatik.github.io/RC-Knowledgebase/img/rc-plane-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://CagriCatik.github.io/RC-Knowledgebase/img/rc-plane-social-card.jpg"><meta data-rh="true" property="og:url" content="https://CagriCatik.github.io/RC-Knowledgebase/docs/controller/flight-controller/stabilizer-vs-fc"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Stabilizer or Flight Controller | RC Knowledgebase"><meta data-rh="true" name="description" content="When building or operating fixed-wing RC planes, one of the critical decisions you&#x27;ll face is choosing between a stabilizer and a flight controller. Both devices aim to enhance flight stability and control, but they offer different levels of functionality and complexity. Understanding the distinctions between them, their respective features, and the scenarios in which each excels is essential for optimizing your aircraft&#x27;s performance and ensuring a smooth flying experience."><meta data-rh="true" property="og:description" content="When building or operating fixed-wing RC planes, one of the critical decisions you&#x27;ll face is choosing between a stabilizer and a flight controller. Both devices aim to enhance flight stability and control, but they offer different levels of functionality and complexity. Understanding the distinctions between them, their respective features, and the scenarios in which each excels is essential for optimizing your aircraft&#x27;s performance and ensuring a smooth flying experience."><link data-rh="true" rel="icon" href="/RC-Knowledgebase/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://CagriCatik.github.io/RC-Knowledgebase/docs/controller/flight-controller/stabilizer-vs-fc"><link data-rh="true" rel="alternate" href="https://CagriCatik.github.io/RC-Knowledgebase/docs/controller/flight-controller/stabilizer-vs-fc" hreflang="en"><link data-rh="true" rel="alternate" href="https://CagriCatik.github.io/RC-Knowledgebase/docs/controller/flight-controller/stabilizer-vs-fc" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/RC-Knowledgebase/blog/rss.xml" title="RC Knowledgebase RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/RC-Knowledgebase/blog/atom.xml" title="RC Knowledgebase Atom Feed"><link rel="stylesheet" href="/RC-Knowledgebase/assets/css/styles.bdbce3e1.css">
+<script src="/RC-Knowledgebase/assets/js/runtime~main.a71acf75.js" defer="defer"></script>
+<script src="/RC-Knowledgebase/assets/js/main.9f5c275a.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/RC-Knowledgebase/"><div class="navbar__logo"><img src="/RC-Knowledgebase/img/logo.png" alt="RC Knowledgebase Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/RC-Knowledgebase/img/logo.png" alt="RC Knowledgebase Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href="/RC-Knowledgebase/docs/rc-plane/selecting_parts_for_rc_plane">RC Plane 🛩️</a><a class="navbar__item navbar__link" href="/RC-Knowledgebase/docs/rc-car/selecting_parts_for_rc_car">RC Car 🏎️</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/RC-Knowledgebase/docs/category/flight-controller">Controller 🎮</a><a class="navbar__item navbar__link" href="/RC-Knowledgebase/docs/04_3d-printing/choosing-filament">3D Printing 🖨️</a><a class="navbar__item navbar__link" href="/RC-Knowledgebase/docs/FAQ/selecting_motor_esc">FAQ ❓</a><a class="navbar__item navbar__link" href="/RC-Knowledgebase/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/CagriCatik/My-RC-Plane-Knowledgebase" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/RC-Knowledgebase/docs/category/flight-controller">Flight Controller</a><button aria-label="Collapse sidebar category &#x27;Flight Controller&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/RC-Knowledgebase/docs/controller/flight-controller/intro">Introduction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/RC-Knowledgebase/docs/controller/flight-controller/fc-basics">Flight Controller Basics</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/RC-Knowledgebase/docs/controller/flight-controller/speedy-bee">SpeedyBee F405 V3</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/RC-Knowledgebase/docs/controller/flight-controller/stabilizer-vs-fc">Stabilizer or Flight Controller</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/RC-Knowledgebase/docs/controller/flight-controller/fms-reflex">FMS Reflex V3</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/RC-Knowledgebase/docs/category/rc-controller">RC Controller</a><button aria-label="Expand sidebar category &#x27;RC Controller&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/RC-Knowledgebase/docs/category/first-person-view">First-Person View</a><button aria-label="Expand sidebar category &#x27;First-Person View&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/RC-Knowledgebase/docs/controller/plane_controls">Airplane Controls</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/RC-Knowledgebase/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/RC-Knowledgebase/docs/category/flight-controller"><span itemprop="name">Flight Controller</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Stabilizer or Flight Controller</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Stabilizer or Flight Controller</h1></header>
+<p>When building or operating fixed-wing RC planes, one of the critical decisions you&#x27;ll face is choosing between a <strong>stabilizer</strong> and a <strong>flight controller</strong>. Both devices aim to enhance flight stability and control, but they offer different levels of functionality and complexity. Understanding the distinctions between them, their respective features, and the scenarios in which each excels is essential for optimizing your aircraft&#x27;s performance and ensuring a smooth flying experience.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h2>
+<p>Fixed-wing aircraft, unlike their multirotor counterparts, inherently possess aerodynamic stability due to their design. However, factors such as wind gusts, pilot input, and varying flight conditions can still challenge this stability. To address these challenges, pilots often integrate electronic devices like stabilizers and flight controllers into their models. While both serve to stabilize the aircraft, they differ significantly in capabilities, complexity, and application. This chapter delves into the roles of stabilizers and flight controllers, highlighting their functionalities, features, and the considerations necessary for selecting the right system for your fixed-wing plane.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-stabilizers">What are Stabilizers?<a href="#what-are-stabilizers" class="hash-link" aria-label="Direct link to What are Stabilizers?" title="Direct link to What are Stabilizers?">​</a></h2>
+<p>A <strong>stabilizer</strong> is a specialized device designed to enhance the stability of RC aircraft by mitigating uncommanded movements and ensuring smoother flight. Primarily used in fixed-wing models, stabilizers act as intermediaries between the radio receiver and the servos that control the aircraft&#x27;s control surfaces (ailerons, elevators, rudders).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="functionality">Functionality<a href="#functionality" class="hash-link" aria-label="Direct link to Functionality" title="Direct link to Functionality">​</a></h3>
+<p>Stabilizers perform the following core functions:</p>
+<ol>
+<li>
+<p><strong>Signal Processing:</strong> They receive input signals from the RC receiver, interpreting the pilot&#x27;s commands for throttle, pitch, roll, and yaw.</p>
+</li>
+<li>
+<p><strong>Sensor Integration:</strong> Equipped with a gyroscope and accelerometer, stabilizers monitor the aircraft&#x27;s orientation and movement in real-time.</p>
+</li>
+<li>
+<p><strong>Automatic Corrections:</strong> When the stabilizer detects uncommanded movements—such as those caused by wind gusts or turbulence—it automatically adjusts the servos to counteract these disturbances, maintaining the desired flight path.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h3>
+<p>Modern stabilizers come equipped with a range of features that enhance their utility:</p>
+<ul>
+<li>
+<p><strong>2D Mode (Stabilization):</strong> Automatically corrects uncommanded roll and pitch movements, making the aircraft behave as if it has a larger wingspan and greater mass. This mode is particularly beneficial for smaller models that are more susceptible to wind disturbances.</p>
+</li>
+<li>
+<p><strong>3D Mode (Attitude Lock):</strong> Allows the aircraft to maintain specific attitudes, such as flying in a knife-edge position. The stabilizer manages the necessary servo adjustments to sustain these unconventional flight maneuvers.</p>
+</li>
+<li>
+<p><strong>Trainer Mode:</strong> Limits the range of motion for roll and pitch, preventing aggressive inputs that could lead to loss of control. This mode is invaluable for training new pilots, offering a safer and more forgiving flight experience.</p>
+</li>
+<li>
+<p><strong>Self-Righting:</strong> Enables the aircraft to recover from undesirable attitudes, such as spins or inverted positions, by automatically adjusting control surfaces to return to level flight.</p>
+</li>
+<li>
+<p><strong>Auto Level:</strong> Automatically returns the aircraft to a level attitude when the pilot releases the control sticks, ensuring stability during moments of hands-off flight.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="advantages-of-using-stabilizers">Advantages of Using Stabilizers<a href="#advantages-of-using-stabilizers" class="hash-link" aria-label="Direct link to Advantages of Using Stabilizers" title="Direct link to Advantages of Using Stabilizers">​</a></h3>
+<ul>
+<li>
+<p><strong>Simplicity:</strong> Stabilizers are generally easier to set up and configure compared to flight controllers, making them ideal for beginners.</p>
+</li>
+<li>
+<p><strong>Cost-Effective:</strong> They are typically less expensive than flight controllers, providing essential stabilization without a hefty price tag.</p>
+</li>
+<li>
+<p><strong>Enhanced Control:</strong> Stabilizers significantly improve flight smoothness and responsiveness, especially in challenging weather conditions.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-flight-controllers">What are Flight Controllers?<a href="#what-are-flight-controllers" class="hash-link" aria-label="Direct link to What are Flight Controllers?" title="Direct link to What are Flight Controllers?">​</a></h2>
+<p>A <strong>flight controller</strong> is a more advanced and versatile device that serves as the central processing unit for RC aircraft. While stabilizers focus primarily on stabilization, flight controllers offer a broader range of functionalities, including navigation, telemetry, and autonomous flight capabilities.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="functionality-1">Functionality<a href="#functionality-1" class="hash-link" aria-label="Direct link to Functionality" title="Direct link to Functionality">​</a></h3>
+<p>Flight controllers perform a multitude of functions beyond mere stabilization:</p>
+<ol>
+<li>
+<p><strong>Comprehensive Signal Decoding:</strong> They interpret a wider array of input signals from various radio systems and receivers, ensuring compatibility and flexibility.</p>
+</li>
+<li>
+<p><strong>Advanced Stabilization:</strong> Utilizing sophisticated algorithms and multiple sensors, flight controllers provide superior stabilization and control compared to traditional stabilizers.</p>
+</li>
+<li>
+<p><strong>Navigation and Autonomy:</strong> Many flight controllers integrate GPS modules and support autonomous flight modes, enabling features like return-to-home, loitering, and waypoint navigation.</p>
+</li>
+<li>
+<p><strong>Telemetry Integration:</strong> They can transmit real-time flight data back to the pilot, including battery status, altitude, speed, and more, enhancing situational awareness.</p>
+</li>
+<li>
+<p><strong>On-Screen Display (OSD):</strong> Flight controllers often support OSD functionalities, overlaying critical flight information onto the FPV video feed for the pilot&#x27;s convenience.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features-1">Features<a href="#features-1" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h3>
+<p>Flight controllers are equipped with a myriad of features that cater to both novice and advanced pilots:</p>
+<ul>
+<li>
+<p><strong>Angle Mode:</strong> Similar to stabilizer&#x27;s 2D mode, it limits the aircraft&#x27;s pitch and roll to predefined angles, ensuring stable flight while allowing for aerobatic maneuvers when desired.</p>
+</li>
+<li>
+<p><strong>Horizon Mode:</strong> Provides a balance between manual control and stabilization. When the control sticks are centered, the flight controller maintains a level attitude. Pushing the sticks to the edge allows for full aerobatic control.</p>
+</li>
+<li>
+<p><strong>GPS Integration:</strong> Facilitates autonomous flight features such as return-to-home, loitering, and waypoint navigation, enhancing both safety and functionality.</p>
+</li>
+<li>
+<p><strong>Failsafe Options:</strong> Advanced flight controllers offer sophisticated failsafe settings, such as auto-land or return-to-home in the event of signal loss or low battery, preventing the aircraft from flying away or crashing.</p>
+</li>
+<li>
+<p><strong>Telemetry and Data Logging:</strong> They can record and transmit flight data, enabling post-flight analysis and performance optimization.</p>
+</li>
+<li>
+<p><strong>Configurable Modes:</strong> Allow pilots to switch between different flight modes (e.g., manual, stabilized, autonomous) seamlessly, adapting to various flying scenarios.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="advantages-of-using-flight-controllers">Advantages of Using Flight Controllers<a href="#advantages-of-using-flight-controllers" class="hash-link" aria-label="Direct link to Advantages of Using Flight Controllers" title="Direct link to Advantages of Using Flight Controllers">​</a></h3>
+<ul>
+<li>
+<p><strong>Versatility:</strong> Flight controllers support a wide range of functionalities, making them suitable for diverse flying styles and applications.</p>
+</li>
+<li>
+<p><strong>Advanced Features:</strong> They offer capabilities like GPS-based navigation, autonomous flight, and telemetry, which are beyond the scope of traditional stabilizers.</p>
+</li>
+<li>
+<p><strong>Customization:</strong> Extensive configuration options allow pilots to tailor flight characteristics to their preferences and specific aircraft requirements.</p>
+</li>
+<li>
+<p><strong>Future-Proofing:</strong> With firmware updates and community support, flight controllers can evolve with advancements in technology, ensuring long-term utility.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="comparing-stabilizers-and-flight-controllers">Comparing Stabilizers and Flight Controllers<a href="#comparing-stabilizers-and-flight-controllers" class="hash-link" aria-label="Direct link to Comparing Stabilizers and Flight Controllers" title="Direct link to Comparing Stabilizers and Flight Controllers">​</a></h2>
+<p>While both stabilizers and flight controllers aim to enhance flight stability and control, they differ significantly in their capabilities, complexity, and applications.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overlapping-features">Overlapping Features<a href="#overlapping-features" class="hash-link" aria-label="Direct link to Overlapping Features" title="Direct link to Overlapping Features">​</a></h3>
+<ul>
+<li>
+<p><strong>Stabilization:</strong> Both devices provide stabilization to counteract uncommanded movements and maintain level flight.</p>
+</li>
+<li>
+<p><strong>Sensor Integration:</strong> Both incorporate gyroscopes and accelerometers to monitor the aircraft&#x27;s orientation and movement.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="distinct-features-of-flight-controllers">Distinct Features of Flight Controllers<a href="#distinct-features-of-flight-controllers" class="hash-link" aria-label="Direct link to Distinct Features of Flight Controllers" title="Direct link to Distinct Features of Flight Controllers">​</a></h3>
+<ul>
+<li>
+<p><strong>Advanced Navigation:</strong> Flight controllers support GPS integration and autonomous flight modes, enabling features like return-to-home and waypoint navigation.</p>
+</li>
+<li>
+<p><strong>Telemetry and Data Logging:</strong> They can transmit real-time flight data back to the pilot and record flight logs for analysis.</p>
+</li>
+<li>
+<p><strong>On-Screen Display (OSD):</strong> Flight controllers can overlay telemetry data onto the FPV video feed, providing essential flight information without diverting attention.</p>
+</li>
+<li>
+<p><strong>Configurable Flight Modes:</strong> Allow for seamless switching between different flight profiles, catering to various flying scenarios and pilot preferences.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="situations-for-choosing-stabilizers">Situations for Choosing Stabilizers<a href="#situations-for-choosing-stabilizers" class="hash-link" aria-label="Direct link to Situations for Choosing Stabilizers" title="Direct link to Situations for Choosing Stabilizers">​</a></h3>
+<ul>
+<li>
+<p><strong>Beginners:</strong> Stabilizers are easier to set up and configure, making them ideal for those new to RC aviation.</p>
+</li>
+<li>
+<p><strong>Budget-Conscious Pilots:</strong> They offer essential stabilization at a lower cost compared to flight controllers.</p>
+</li>
+<li>
+<p><strong>Simpler Aircraft:</strong> Ideal for smaller or less complex fixed-wing models that do not require advanced navigation or telemetry features.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="situations-for-choosing-flight-controllers">Situations for Choosing Flight Controllers<a href="#situations-for-choosing-flight-controllers" class="hash-link" aria-label="Direct link to Situations for Choosing Flight Controllers" title="Direct link to Situations for Choosing Flight Controllers">​</a></h3>
+<ul>
+<li>
+<p><strong>Advanced Pilots:</strong> Those seeking greater control, customization, and advanced features will benefit from flight controllers.</p>
+</li>
+<li>
+<p><strong>Complex Applications:</strong> Suitable for aircraft requiring GPS navigation, autonomous flight modes, and telemetry integration.</p>
+</li>
+<li>
+<p><strong>FPV Enthusiasts:</strong> Enhanced features like OSD and real-time data transmission are invaluable for FPV flying, providing pilots with critical information without hindering their view.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-features-and-modes">Key Features and Modes<a href="#key-features-and-modes" class="hash-link" aria-label="Direct link to Key Features and Modes" title="Direct link to Key Features and Modes">​</a></h2>
+<p>Understanding the specific modes and features offered by stabilizers and flight controllers can help you make an informed decision based on your flying needs.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="stabilizer-modes">Stabilizer Modes<a href="#stabilizer-modes" class="hash-link" aria-label="Direct link to Stabilizer Modes" title="Direct link to Stabilizer Modes">​</a></h3>
+<ol>
+<li>
+<p><strong>2D Mode (Stabilization):</strong></p>
+<ul>
+<li><strong>Function:</strong> Automatically corrects uncommanded roll and pitch movements.</li>
+<li><strong>Benefit:</strong> Makes smaller models behave as if they have a larger wingspan and greater mass, enhancing stability in windy conditions.</li>
+</ul>
+</li>
+<li>
+<p><strong>3D Mode (Attitude Lock):</strong></p>
+<ul>
+<li><strong>Function:</strong> Maintains specific flight attitudes, such as flying in a knife-edge position.</li>
+<li><strong>Benefit:</strong> Allows for aerobatic maneuvers with automated corrections to sustain the desired attitude.</li>
+</ul>
+</li>
+<li>
+<p><strong>Trainer Mode:</strong></p>
+<ul>
+<li><strong>Function:</strong> Limits the range of motion for roll and pitch, preventing aggressive inputs.</li>
+<li><strong>Benefit:</strong> Ideal for training new pilots, offering a safer and more forgiving flight experience by preventing overbanking and excessive pitching.</li>
+</ul>
+</li>
+<li>
+<p><strong>Self-Righting:</strong></p>
+<ul>
+<li><strong>Function:</strong> Automatically corrects the aircraft&#x27;s attitude to return to level flight from undesirable positions like spins or inverted states.</li>
+<li><strong>Benefit:</strong> Enhances safety by recovering the aircraft from potentially hazardous flight conditions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Auto Level:</strong></p>
+<ul>
+<li><strong>Function:</strong> Returns the aircraft to a level attitude when the pilot releases the control sticks.</li>
+<li><strong>Benefit:</strong> Ensures stability during moments of hands-off flight, preventing uncontrolled descents or tilts.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="flight-controller-modes">Flight Controller Modes<a href="#flight-controller-modes" class="hash-link" aria-label="Direct link to Flight Controller Modes" title="Direct link to Flight Controller Modes">​</a></h3>
+<ol>
+<li>
+<p><strong>Angle Mode:</strong></p>
+<ul>
+<li><strong>Function:</strong> Similar to stabilizer&#x27;s 2D mode, it limits the aircraft&#x27;s pitch and roll to predefined angles.</li>
+<li><strong>Benefit:</strong> Provides stable flight while allowing for controlled aerobatic maneuvers when desired.</li>
+</ul>
+</li>
+<li>
+<p><strong>Horizon Mode:</strong></p>
+<ul>
+<li><strong>Function:</strong> Balances manual control and stabilization. Centering the sticks maintains level flight, while moving the sticks allows for full aerobatic control.</li>
+<li><strong>Benefit:</strong> Offers flexibility, enabling pilots to perform both stable and aggressive maneuvers seamlessly.</li>
+</ul>
+</li>
+<li>
+<p><strong>GPS-Based Modes:</strong></p>
+<ul>
+<li><strong>Return-to-Home (RTH):</strong> Automatically navigates the aircraft back to its takeoff point in case of signal loss or low battery.</li>
+<li><strong>Loitering:</strong> Keeps the aircraft hovering in a designated area, circling above a specific point.</li>
+<li><strong>Waypoint Navigation:</strong> Guides the aircraft along predefined flight paths for missions like surveying or mapping.</li>
+</ul>
+</li>
+<li>
+<p><strong>Failsafe Modes:</strong></p>
+<ul>
+<li><strong>Auto-Land:</strong> Lands the aircraft safely in case of critical failures.</li>
+<li><strong>Return-to-Home:</strong> Navigates the aircraft back to the pilot&#x27;s location autonomously.</li>
+</ul>
+</li>
+<li>
+<p><strong>On-Screen Display (OSD):</strong></p>
+<ul>
+<li><strong>Function:</strong> Overlays telemetry data onto the FPV video feed.</li>
+<li><strong>Benefit:</strong> Provides real-time information such as battery voltage, altitude, speed, and direction without requiring separate display devices.</li>
+</ul>
+</li>
+<li>
+<p><strong>Telemetry and Data Logging:</strong></p>
+<ul>
+<li><strong>Function:</strong> Transmits real-time flight data to the pilot and records flight logs for post-flight analysis.</li>
+<li><strong>Benefit:</strong> Enhances situational awareness and allows for performance optimization through data review.</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="practical-considerations">Practical Considerations<a href="#practical-considerations" class="hash-link" aria-label="Direct link to Practical Considerations" title="Direct link to Practical Considerations">​</a></h2>
+<p>When deciding between a stabilizer and a flight controller for your fixed-wing RC plane, several practical factors should influence your choice.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="setup-complexity">Setup Complexity<a href="#setup-complexity" class="hash-link" aria-label="Direct link to Setup Complexity" title="Direct link to Setup Complexity">​</a></h3>
+<ul>
+<li>
+<p><strong>Stabilizers:</strong> Generally simpler to set up with fewer configuration steps. Ideal for pilots seeking quick and straightforward stabilization enhancements.</p>
+</li>
+<li>
+<p><strong>Flight Controllers:</strong> Require more comprehensive setup, often involving computer-based configuration and firmware updates. Best suited for pilots comfortable with technical configurations and seeking advanced functionalities.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cost">Cost<a href="#cost" class="hash-link" aria-label="Direct link to Cost" title="Direct link to Cost">​</a></h3>
+<ul>
+<li>
+<p><strong>Stabilizers:</strong> More budget-friendly, offering essential stabilization features without the higher price tag associated with flight controllers.</p>
+</li>
+<li>
+<p><strong>Flight Controllers:</strong> Typically more expensive due to their advanced capabilities and additional features. However, the investment is justified for pilots seeking enhanced control and functionality.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="use-cases">Use Cases<a href="#use-cases" class="hash-link" aria-label="Direct link to Use Cases" title="Direct link to Use Cases">​</a></h3>
+<ul>
+<li>
+<p><strong>Stabilizers:</strong> Perfect for smaller, simpler aircraft or pilots who prioritize ease of use and cost-effectiveness.</p>
+</li>
+<li>
+<p><strong>Flight Controllers:</strong> Ideal for larger, more complex models or pilots who desire advanced features like GPS navigation, autonomous flight, and telemetry integration.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="compatibility-and-future-proofing">Compatibility and Future-Proofing<a href="#compatibility-and-future-proofing" class="hash-link" aria-label="Direct link to Compatibility and Future-Proofing" title="Direct link to Compatibility and Future-Proofing">​</a></h3>
+<ul>
+<li>
+<p><strong>Stabilizers:</strong> May have limited compatibility with advanced features and future upgrades.</p>
+</li>
+<li>
+<p><strong>Flight Controllers:</strong> Offer greater flexibility and compatibility with a wide range of peripherals and future firmware updates, ensuring longevity and adaptability.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="training-and-skill-level">Training and Skill Level<a href="#training-and-skill-level" class="hash-link" aria-label="Direct link to Training and Skill Level" title="Direct link to Training and Skill Level">​</a></h3>
+<ul>
+<li>
+<p><strong>Stabilizers:</strong> Suitable for beginners or pilots focusing on basic stabilization without delving into complex configurations.</p>
+</li>
+<li>
+<p><strong>Flight Controllers:</strong> Cater to advanced pilots who are willing to invest time in learning and configuring sophisticated systems to unlock their full potential.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tips-and-cautions">Tips and Cautions<a href="#tips-and-cautions" class="hash-link" aria-label="Direct link to Tips and Cautions" title="Direct link to Tips and Cautions">​</a></h2>
+<p>Regardless of whether you choose a stabilizer or a flight controller, certain best practices and precautions can enhance your experience and ensure safe operations.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="failsafe-settings">Failsafe Settings<a href="#failsafe-settings" class="hash-link" aria-label="Direct link to Failsafe Settings" title="Direct link to Failsafe Settings">​</a></h3>
+<ul>
+<li>
+<p><strong>Importance:</strong> Properly configuring failsafe settings is crucial to prevent unintended aircraft behavior in case of signal loss or critical failures.</p>
+</li>
+<li>
+<p><strong>Stabilizers:</strong> Ensure that failsafe settings do not cause the aircraft to continue flying uncontrollably. For example, avoid settings that leave the throttle on, which could lead to the plane flying away until the battery depletes.</p>
+</li>
+<li>
+<p><strong>Flight Controllers:</strong> Utilize advanced failsafe options like auto-land or return-to-home to enhance safety. Always test failsafe functionality before flight to ensure reliable performance.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="compatibility">Compatibility<a href="#compatibility" class="hash-link" aria-label="Direct link to Compatibility" title="Direct link to Compatibility">​</a></h3>
+<ul>
+<li>
+<p><strong>Check Specifications:</strong> Ensure that the stabilizer or flight controller is compatible with your aircraft&#x27;s servos, receivers, and other electronic components.</p>
+</li>
+<li>
+<p><strong>Firmware Updates:</strong> For flight controllers, regularly update firmware to access the latest features and security enhancements. Verify compatibility before performing updates to avoid issues.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="telemetry-considerations">Telemetry Considerations<a href="#telemetry-considerations" class="hash-link" aria-label="Direct link to Telemetry Considerations" title="Direct link to Telemetry Considerations">​</a></h3>
+<ul>
+<li>
+<p><strong>Data Overload:</strong> When integrating telemetry features, ensure that your radio system can handle the additional data without interference or lag.</p>
+</li>
+<li>
+<p><strong>Privacy and Security:</strong> Be mindful of the data transmitted by telemetry systems, especially when using GPS features that track the aircraft&#x27;s location.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="installation-and-wiring">Installation and Wiring<a href="#installation-and-wiring" class="hash-link" aria-label="Direct link to Installation and Wiring" title="Direct link to Installation and Wiring">​</a></h3>
+<ul>
+<li>
+<p><strong>Secure Mounting:</strong> Whether installing a stabilizer or flight controller, ensure it is securely mounted to prevent vibrations and movement that could disrupt functionality.</p>
+</li>
+<li>
+<p><strong>Proper Wiring:</strong> Follow manufacturer guidelines for wiring connections to avoid short circuits, signal interference, or power issues.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pilot-comfort-and-familiarity">Pilot Comfort and Familiarity<a href="#pilot-comfort-and-familiarity" class="hash-link" aria-label="Direct link to Pilot Comfort and Familiarity" title="Direct link to Pilot Comfort and Familiarity">​</a></h3>
+<ul>
+<li>
+<p><strong>Ease of Use:</strong> Choose a system that aligns with your technical comfort level. Stabilizers are generally more user-friendly, while flight controllers may require a steeper learning curve.</p>
+</li>
+<li>
+<p><strong>Documentation and Support:</strong> Opt for devices with comprehensive documentation and active community support to assist with setup and troubleshooting.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>Choosing between a stabilizer and a flight controller for your fixed-wing RC plane depends on your specific needs, skill level, and the desired level of control and functionality. <strong>Stabilizers</strong> offer essential stabilization features at a lower cost and with simpler setup, making them ideal for beginners or those with simpler aircraft. On the other hand, <strong>flight controllers</strong> provide a comprehensive suite of advanced features, including GPS navigation, telemetry, and autonomous flight capabilities, catering to advanced pilots and more complex builds.</p>
+<p>By thoroughly understanding the functionalities, features, and practical considerations associated with each device, you can make an informed decision that enhances your flying experience, ensures safety, and aligns with your aviation goals. Whether you opt for the straightforward stabilization of a stabilizer or the versatile control of a flight controller, integrating the right system into your fixed-wing aircraft is pivotal for achieving reliable and enjoyable flights.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="appendix-glossary-of-terms">Appendix: Glossary of Terms<a href="#appendix-glossary-of-terms" class="hash-link" aria-label="Direct link to Appendix: Glossary of Terms" title="Direct link to Appendix: Glossary of Terms">​</a></h2>
+<ul>
+<li>
+<p><strong>Angle Mode:</strong> A flight controller mode that limits the aircraft&#x27;s pitch and roll to predefined angles, providing stable flight while allowing for controlled aerobatic maneuvers.</p>
+</li>
+<li>
+<p><strong>Auto Level:</strong> A stabilization feature that automatically returns the aircraft to a level attitude when the pilot releases the control sticks.</p>
+</li>
+<li>
+<p><strong>Battery Eliminator Circuit (BEC):</strong> A component within an ESC that provides regulated power to the receiver and servos, eliminating the need for a separate receiver battery.</p>
+</li>
+<li>
+<p><strong>Electronic Speed Controller (ESC):</strong> A device that controls the speed of an electric motor by regulating the power delivery from the battery.</p>
+</li>
+<li>
+<p><strong>Flight Controller:</strong> An electronic board that manages the flight operations of an RC aircraft by processing sensor data and pilot inputs.</p>
+</li>
+<li>
+<p><strong>Gyroscope (Gyro):</strong> A sensor that measures angular velocity, allowing the flight controller or stabilizer to detect rotation around axes.</p>
+</li>
+<li>
+<p><strong>Horizon Mode:</strong> A flight controller mode that balances manual control and stabilization, maintaining a level attitude when the control sticks are centered.</p>
+</li>
+<li>
+<p><strong>I²C Bus:</strong> A communication protocol used to connect low-speed peripherals like sensors to the flight controller.</p>
+</li>
+<li>
+<p><strong>Inertial Measurement Unit (IMU):</strong> A combination of gyroscope and accelerometer sensors used to track the aircraft&#x27;s orientation and movement.</p>
+</li>
+<li>
+<p><strong>Magnetometer:</strong> A sensor that provides heading information, essential for precise navigation and maintaining directionality.</p>
+</li>
+<li>
+<p><strong>On-Screen Display (OSD):</strong> A system that overlays telemetry data onto the FPV video feed, providing real-time flight information.</p>
+</li>
+<li>
+<p><strong>PID Controller:</strong> A control loop mechanism employing Proportional, Integral, and Derivative terms to maintain desired flight characteristics.</p>
+</li>
+<li>
+<p><strong>Serial Port:</strong> A communication interface used to connect peripherals like receivers, GPS modules, and telemetry devices.</p>
+</li>
+<li>
+<p><strong>STM32:</strong> A family of 32-bit microcontrollers widely used in flight controllers and stabilizers for their performance and versatility.</p>
+</li>
+<li>
+<p><strong>Telemetry:</strong> The transmission of data from the aircraft to the pilot, providing real-time information about flight parameters.</p>
+</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/CagriCatik/RC-Knowledgebase/tree/main/docs/03_controller/01_flight-controller/03_stabilizer-vs-fc.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/RC-Knowledgebase/docs/controller/flight-controller/speedy-bee"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">SpeedyBee F405 V3</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/RC-Knowledgebase/docs/controller/flight-controller/fms-reflex"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">FMS Reflex V3</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#introduction" class="table-of-contents__link toc-highlight">Introduction</a></li><li><a href="#what-are-stabilizers" class="table-of-contents__link toc-highlight">What are Stabilizers?</a><ul><li><a href="#functionality" class="table-of-contents__link toc-highlight">Functionality</a></li><li><a href="#features" class="table-of-contents__link toc-highlight">Features</a></li><li><a href="#advantages-of-using-stabilizers" class="table-of-contents__link toc-highlight">Advantages of Using Stabilizers</a></li></ul></li><li><a href="#what-are-flight-controllers" class="table-of-contents__link toc-highlight">What are Flight Controllers?</a><ul><li><a href="#functionality-1" class="table-of-contents__link toc-highlight">Functionality</a></li><li><a href="#features-1" class="table-of-contents__link toc-highlight">Features</a></li><li><a href="#advantages-of-using-flight-controllers" class="table-of-contents__link toc-highlight">Advantages of Using Flight Controllers</a></li></ul></li><li><a href="#comparing-stabilizers-and-flight-controllers" class="table-of-contents__link toc-highlight">Comparing Stabilizers and Flight Controllers</a><ul><li><a href="#overlapping-features" class="table-of-contents__link toc-highlight">Overlapping Features</a></li><li><a href="#distinct-features-of-flight-controllers" class="table-of-contents__link toc-highlight">Distinct Features of Flight Controllers</a></li><li><a href="#situations-for-choosing-stabilizers" class="table-of-contents__link toc-highlight">Situations for Choosing Stabilizers</a></li><li><a href="#situations-for-choosing-flight-controllers" class="table-of-contents__link toc-highlight">Situations for Choosing Flight Controllers</a></li></ul></li><li><a href="#key-features-and-modes" class="table-of-contents__link toc-highlight">Key Features and Modes</a><ul><li><a href="#stabilizer-modes" class="table-of-contents__link toc-highlight">Stabilizer Modes</a></li><li><a href="#flight-controller-modes" class="table-of-contents__link toc-highlight">Flight Controller Modes</a></li></ul></li><li><a href="#practical-considerations" class="table-of-contents__link toc-highlight">Practical Considerations</a><ul><li><a href="#setup-complexity" class="table-of-contents__link toc-highlight">Setup Complexity</a></li><li><a href="#cost" class="table-of-contents__link toc-highlight">Cost</a></li><li><a href="#use-cases" class="table-of-contents__link toc-highlight">Use Cases</a></li><li><a href="#compatibility-and-future-proofing" class="table-of-contents__link toc-highlight">Compatibility and Future-Proofing</a></li><li><a href="#training-and-skill-level" class="table-of-contents__link toc-highlight">Training and Skill Level</a></li></ul></li><li><a href="#tips-and-cautions" class="table-of-contents__link toc-highlight">Tips and Cautions</a><ul><li><a href="#failsafe-settings" class="table-of-contents__link toc-highlight">Failsafe Settings</a></li><li><a href="#compatibility" class="table-of-contents__link toc-highlight">Compatibility</a></li><li><a href="#telemetry-considerations" class="table-of-contents__link toc-highlight">Telemetry Considerations</a></li><li><a href="#installation-and-wiring" class="table-of-contents__link toc-highlight">Installation and Wiring</a></li><li><a href="#pilot-comfort-and-familiarity" class="table-of-contents__link toc-highlight">Pilot Comfort and Familiarity</a></li></ul></li><li><a href="#conclusion" class="table-of-contents__link toc-highlight">Conclusion</a></li><li><a href="#appendix-glossary-of-terms" class="table-of-contents__link toc-highlight">Appendix: Glossary of Terms</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">RC Knowledgebase</div></div></div></footer></div>
+</body>
+</html>
