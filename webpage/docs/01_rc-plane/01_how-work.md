@@ -4,12 +4,6 @@ This documentation provides an in-depth exploration of the components, electroni
 
 ---
 
-## Table of Contents
-
-*Note: As per your request, a Table of Contents is omitted.*
-
----
-
 ## 1. Overview of RC Airplanes
 
 Remote-Controlled (RC) airplanes are miniature replicas of real aircraft, controlled remotely by a user via a transmitter. They are equipped with various electronic components that manage power, control surfaces, and communication between the transmitter and the airplane. Understanding these components and their interactions is crucial for building, operating, and maintaining an RC airplane.
