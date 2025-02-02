@@ -1,5 +1,6 @@
 # Dependencies
 node_modules
+cad-lib/
 
 # Production
 /build
