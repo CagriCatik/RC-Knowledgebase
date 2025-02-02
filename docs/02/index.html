@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-02" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Brushless Motor | RC Knowledgebase</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://CagriCatik.github.io/RC-Knowledgebase/img/rc-plane-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://CagriCatik.github.io/RC-Knowledgebase/img/rc-plane-social-card.jpg"><meta data-rh="true" property="og:url" content="https://CagriCatik.github.io/RC-Knowledgebase/docs/02"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Brushless Motor | RC Knowledgebase"><meta data-rh="true" name="description" content="This document provides a rigorous technical overview and interpretation of the labeling and performance metrics commonly found on brushless motors, particularly in the context of radio-controlled (RC) applications. The discussion is intended to clarify the meaning of the numerical designations and other specifications provided on motor “cans” (the housings that enclose the rotor) and to relate these numbers to practical performance characteristics such as torque, rotational speed, current draw, and thrust. The document also addresses considerations for matching motors with appropriate speed controllers and propellers."><meta data-rh="true" property="og:description" content="This document provides a rigorous technical overview and interpretation of the labeling and performance metrics commonly found on brushless motors, particularly in the context of radio-controlled (RC) applications. The discussion is intended to clarify the meaning of the numerical designations and other specifications provided on motor “cans” (the housings that enclose the rotor) and to relate these numbers to practical performance characteristics such as torque, rotational speed, current draw, and thrust. The document also addresses considerations for matching motors with appropriate speed controllers and propellers."><link data-rh="true" rel="icon" href="/RC-Knowledgebase/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://CagriCatik.github.io/RC-Knowledgebase/docs/02"><link data-rh="true" rel="alternate" href="https://CagriCatik.github.io/RC-Knowledgebase/docs/02" hreflang="en"><link data-rh="true" rel="alternate" href="https://CagriCatik.github.io/RC-Knowledgebase/docs/02" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/RC-Knowledgebase/blog/rss.xml" title="RC Knowledgebase RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/RC-Knowledgebase/blog/atom.xml" title="RC Knowledgebase Atom Feed"><link rel="stylesheet" href="/RC-Knowledgebase/assets/css/styles.bdbce3e1.css">
+<script src="/RC-Knowledgebase/assets/js/runtime~main.26a6e26d.js" defer="defer"></script>
+<script src="/RC-Knowledgebase/assets/js/main.d9255c1e.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/RC-Knowledgebase/"><div class="navbar__logo"><img src="/RC-Knowledgebase/img/logo.png" alt="RC Knowledgebase Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/RC-Knowledgebase/img/logo.png" alt="RC Knowledgebase Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href="/RC-Knowledgebase/docs/rc-plane/selecting_parts_for_rc_plane">RC Plane 🛩️</a><a class="navbar__item navbar__link" href="/RC-Knowledgebase/docs/rc-car/selecting_parts_for_rc_car">RC Car 🏎️</a><a class="navbar__item navbar__link" href="/RC-Knowledgebase/docs/category/flight-controller">Controller 🎮</a><a class="navbar__item navbar__link" href="/RC-Knowledgebase/docs/04_3d-printing/choosing-filament">3D Printing 🖨️</a><a class="navbar__item navbar__link" href="/RC-Knowledgebase/docs/FAQ/selecting-motor-propeller">FAQ ❓</a><a class="navbar__item navbar__link" href="/RC-Knowledgebase/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/CagriCatik/My-RC-Plane-Knowledgebase" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Brushless Motor</h1></header>
+<p>This document provides a rigorous technical overview and interpretation of the labeling and performance metrics commonly found on brushless motors, particularly in the context of radio-controlled (RC) applications. The discussion is intended to clarify the meaning of the numerical designations and other specifications provided on motor “cans” (the housings that enclose the rotor) and to relate these numbers to practical performance characteristics such as torque, rotational speed, current draw, and thrust. The document also addresses considerations for matching motors with appropriate speed controllers and propellers.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-overview-of-brushless-motor-construction">1. Overview of Brushless Motor Construction<a href="#1-overview-of-brushless-motor-construction" class="hash-link" aria-label="Direct link to 1. Overview of Brushless Motor Construction" title="Direct link to 1. Overview of Brushless Motor Construction">​</a></h2>
+<p>Brushless motors in RC applications are typically designed as three-phase alternating current (AC) machines. Key characteristics include:</p>
+<ul>
+<li><strong>Absence of Brushes:</strong> The elimination of mechanical brushes reduces wear and increases the motor’s service life. The primary mechanical wear components are the bearings.</li>
+<li><strong>Wiring for Commutation:</strong> Brushless motors employ three wires (one for each phase) that interface with an Electronic Speed Controller (ESC). Reversing the connection of any two wires will reverse the direction of rotation.</li>
+</ul>
+<p>Additionally, brushless motors can be broadly classified as either <strong>inrunners</strong> or <strong>outrunners</strong>:</p>
+<ul>
+<li><strong>Outrunners:</strong> In these designs, the “can” (or outer housing) rotates along with the propeller. They typically provide higher torque and are mounted with the motor placed at the bottom.</li>
+<li><strong>Inrunners:</strong> Here, the stator (and its can) remains fixed while the rotor (typically mounted on the shaft) rotates. Inrunners are often used in applications such as RC helicopters.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-interpretation-of-motor-labeling">2. Interpretation of Motor Labeling<a href="#2-interpretation-of-motor-labeling" class="hash-link" aria-label="Direct link to 2. Interpretation of Motor Labeling" title="Direct link to 2. Interpretation of Motor Labeling">​</a></h2>
+<p>Manufacturers typically label brushless motors with a series of numbers. Although there is no universal standard for these numbers, a representative example might be:</p>
+<p><strong>“2822 12 1450 kV”</strong></p>
+<p>Each element in the designation conveys specific information about the motor’s physical and electrical characteristics:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-motor-rotor-diameter">2.1 Motor (Rotor) Diameter<a href="#21-motor-rotor-diameter" class="hash-link" aria-label="Direct link to 2.1 Motor (Rotor) Diameter" title="Direct link to 2.1 Motor (Rotor) Diameter">​</a></h3>
+<ul>
+<li><strong>First Number (e.g., 28):</strong> This figure represents the motor’s diameter, which is the physical width of the can or the rotor inside the can.</li>
+<li><strong>Implications:</strong> A larger diameter generally translates to greater torque production because the rotational force is applied over a larger radius.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="22-motor-rotor-height">2.2 Motor (Rotor) Height<a href="#22-motor-rotor-height" class="hash-link" aria-label="Direct link to 2.2 Motor (Rotor) Height" title="Direct link to 2.2 Motor (Rotor) Height">​</a></h3>
+<ul>
+<li><strong>Second Number (e.g., 22):</strong> This number indicates the height of the motor’s can or the rotor housed within the can.</li>
+<li><strong>Considerations:</strong> The height, in combination with the diameter, contributes to the overall volume and thus the power capacity and thermal characteristics of the motor.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="23-number-of-turns-per-pole">2.3 Number of Turns Per Pole<a href="#23-number-of-turns-per-pole" class="hash-link" aria-label="Direct link to 2.3 Number of Turns Per Pole" title="Direct link to 2.3 Number of Turns Per Pole">​</a></h3>
+<ul>
+<li><strong>Third Number (e.g., 12):</strong> This value specifies the number of wire turns wrapped around each magnetic pole in the motor.</li>
+<li><strong>Performance Trade-Off:</strong>
+<ul>
+<li>A <strong>smaller number of turns</strong> typically allows the motor to achieve higher rotational speeds but with reduced torque.</li>
+<li>A <strong>higher number of turns</strong> increases the strength of the magnetic field, thereby enhancing torque; however, this comes at the expense of a slower maximum rotational speed due to the time required to establish the magnetic field.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="24-kv-rating-revolutions-per-volt">2.4 kV Rating (Revolutions Per Volt)<a href="#24-kv-rating-revolutions-per-volt" class="hash-link" aria-label="Direct link to 2.4 kV Rating (Revolutions Per Volt)" title="Direct link to 2.4 kV Rating (Revolutions Per Volt)">​</a></h3>
+<ul>
+<li><strong>kV Value (e.g., 1450 kV):</strong> The “kV” rating denotes the number of revolutions per minute (RPM) that the motor will turn per volt applied under no-load conditions.</li>
+<li><strong>Calculation Example:</strong>
+<ul>
+<li>A motor rated at 1450 kV supplied with 10 volts is expected to achieve approximately 14,500 RPM (i.e., 10 × 1450).</li>
+</ul>
+</li>
+<li><strong>Implications:</strong> The kV rating is fundamental in selecting a motor for a given application, as it directly influences both the speed and the type of propeller that should be used.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-additional-performance-metrics">3. Additional Performance Metrics<a href="#3-additional-performance-metrics" class="hash-link" aria-label="Direct link to 3. Additional Performance Metrics" title="Direct link to 3. Additional Performance Metrics">​</a></h2>
+<p>Beyond the primary numbers printed on the motor housing, several additional parameters are critical when evaluating motor performance and compatibility with system components.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="31-power-wattage">3.1 Power (Wattage)<a href="#31-power-wattage" class="hash-link" aria-label="Direct link to 3.1 Power (Wattage)" title="Direct link to 3.1 Power (Wattage)">​</a></h3>
+<ul>
+<li><strong>Definition:</strong> The power output of a motor can be approximated by the product of the operating voltage and the current draw.</li>
+<li><strong>Usage:</strong> This metric is essential in determining the overall power capability and the expected performance envelope of the motor.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="32-current-draw-amperage">3.2 Current Draw (Amperage)<a href="#32-current-draw-amperage" class="hash-link" aria-label="Direct link to 3.2 Current Draw (Amperage)" title="Direct link to 3.2 Current Draw (Amperage)">​</a></h3>
+<ul>
+<li><strong>Importance:</strong> The current draw, usually specified in amperes (amps), indicates the amount of electrical current the motor requires during operation.</li>
+<li><strong>ESC Compatibility:</strong>
+<ul>
+<li>It is imperative that the selected speed controller has a current rating that exceeds the motor’s peak current draw by at least 20% to provide sufficient overhead.</li>
+<li>For instance, if a motor draws a peak current of 22 A, the ESC should be rated for at least 25 A.</li>
+</ul>
+</li>
+<li><strong>Reliability Considerations:</strong> Using an ESC with a lower rating than the motor’s requirement may lead to premature failure or inconsistent performance, regardless of the throttle levels applied.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="33-thrust">3.3 Thrust<a href="#33-thrust" class="hash-link" aria-label="Direct link to 3.3 Thrust" title="Direct link to 3.3 Thrust">​</a></h3>
+<ul>
+<li><strong>Definition:</strong> Thrust is the force generated by the motor-propeller combination and is typically measured in grams or kilograms.</li>
+<li><strong>Matching Motor to Airframe:</strong>
+<ul>
+<li>For fixed-wing applications, the motor should provide a thrust-to-weight ratio that meets or exceeds the design requirements. For example, a 500-gram model may be adequately powered by a motor setup generating approximately 500 g for a basic flight envelope or 750 g to 1000 g for sport or high-performance operation.</li>
+<li>In multicopter designs, the cumulative thrust of all motors is compared to the total weight of the aircraft. A common guideline is that the total thrust should be at least twice the weight of the airframe to ensure agile and stable flight.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="34-battery-voltage-and-propeller-compatibility">3.4 Battery Voltage and Propeller Compatibility<a href="#34-battery-voltage-and-propeller-compatibility" class="hash-link" aria-label="Direct link to 3.4 Battery Voltage and Propeller Compatibility" title="Direct link to 3.4 Battery Voltage and Propeller Compatibility">​</a></h3>
+<ul>
+<li><strong>Battery Voltage:</strong>
+<ul>
+<li>Motors are often matched with battery packs specified by the number of cells (e.g., 1S, 2S, 3S, etc.). For example, a 1S battery typically provides 7.4 V, a 2S battery about 7.4 V (or a similar nominal value depending on chemistry), and so on.</li>
+</ul>
+</li>
+<li><strong>Propeller Selection:</strong>
+<ul>
+<li>As battery voltage increases (with more cells), the recommended propeller size typically decreases. This is because a larger or higher-pitch propeller under a higher voltage supply can impose an exponentially larger load on the motor, leading to excessive current draw and potential damage.</li>
+<li>The specifications provided by manufacturers usually indicate the optimal propeller size for each battery configuration, and adherence to these recommendations is critical to avoid overloading the motor.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-practical-considerations-for-system-integration">4. Practical Considerations for System Integration<a href="#4-practical-considerations-for-system-integration" class="hash-link" aria-label="Direct link to 4. Practical Considerations for System Integration" title="Direct link to 4. Practical Considerations for System Integration">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="41-motor-and-esc-matching">4.1 Motor and ESC Matching<a href="#41-motor-and-esc-matching" class="hash-link" aria-label="Direct link to 4.1 Motor and ESC Matching" title="Direct link to 4.1 Motor and ESC Matching">​</a></h3>
+<ul>
+<li><strong>Current Headroom:</strong>
+<ul>
+<li>Always select an ESC with a current rating that exceeds the motor’s maximum current draw. This approach minimizes the risk of electrical stress and extends the lifespan of both the motor and the ESC.</li>
+</ul>
+</li>
+<li><strong>Thermal Management:</strong>
+<ul>
+<li>Since high current and excessive load can result in increased heat, ensure that both the motor and the ESC are adequately cooled. This is particularly important in high-performance or extended-duration flight conditions.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="42-propeller-and-battery-configuration">4.2 Propeller and Battery Configuration<a href="#42-propeller-and-battery-configuration" class="hash-link" aria-label="Direct link to 4.2 Propeller and Battery Configuration" title="Direct link to 4.2 Propeller and Battery Configuration">​</a></h3>
+<ul>
+<li><strong>System Design:</strong>
+<ul>
+<li>The choice of propeller and battery must be consistent with the motor’s design parameters. A mismatch may result in inefficient performance, reduced flight time, or even damage due to overcurrent.</li>
+</ul>
+</li>
+<li><strong>Performance Testing:</strong>
+<ul>
+<li>Empirical testing, including comparisons of efficiency between different motor kV ratings paired with appropriately sized propellers, can provide valuable insights. Such tests often reveal that lower kV motors with larger props may offer better efficiency under certain load conditions, while higher kV motors with smaller props might be more suitable for applications requiring high RPM.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-conclusion">5. Conclusion<a href="#5-conclusion" class="hash-link" aria-label="Direct link to 5. Conclusion" title="Direct link to 5. Conclusion">​</a></h2>
+<p>The labeling on brushless motors encapsulates critical information regarding physical dimensions, electrical characteristics, and performance expectations. The primary numbers indicate:</p>
+<ul>
+<li><strong>Rotor Diameter and Height:</strong>
+<ul>
+<li>These measurements are correlated with torque and overall power capacity.</li>
+</ul>
+</li>
+<li><strong>Number of Turns Per Pole:</strong>
+<ul>
+<li>This affects the trade-off between speed and torque.</li>
+</ul>
+</li>
+<li><strong>kV Rating:</strong>
+<ul>
+<li>Defines the motor’s no-load RPM per volt and influences the choice of battery and propeller.</li>
+</ul>
+</li>
+</ul>
+<p>Additional performance metrics such as power (wattage), current draw (amperage), and thrust are essential for ensuring that the motor is properly matched to the ESC, battery, and propeller. Adherence to manufacturer recommendations and the careful calculation of performance parameters are fundamental to optimizing system reliability and efficiency.</p>
+<p>This documentation aims to provide a thorough and technical understanding of brushless motor specifications for professionals and enthusiasts in the RC hobby and related engineering fields. Rigorous evaluation of these parameters is essential for achieving the desired balance of performance, efficiency, and durability in RC models and similar applications.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/CagriCatik/RC-Knowledgebase/tree/main/docs/02.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-overview-of-brushless-motor-construction" class="table-of-contents__link toc-highlight">1. Overview of Brushless Motor Construction</a></li><li><a href="#2-interpretation-of-motor-labeling" class="table-of-contents__link toc-highlight">2. Interpretation of Motor Labeling</a><ul><li><a href="#21-motor-rotor-diameter" class="table-of-contents__link toc-highlight">2.1 Motor (Rotor) Diameter</a></li><li><a href="#22-motor-rotor-height" class="table-of-contents__link toc-highlight">2.2 Motor (Rotor) Height</a></li><li><a href="#23-number-of-turns-per-pole" class="table-of-contents__link toc-highlight">2.3 Number of Turns Per Pole</a></li><li><a href="#24-kv-rating-revolutions-per-volt" class="table-of-contents__link toc-highlight">2.4 kV Rating (Revolutions Per Volt)</a></li></ul></li><li><a href="#3-additional-performance-metrics" class="table-of-contents__link toc-highlight">3. Additional Performance Metrics</a><ul><li><a href="#31-power-wattage" class="table-of-contents__link toc-highlight">3.1 Power (Wattage)</a></li><li><a href="#32-current-draw-amperage" class="table-of-contents__link toc-highlight">3.2 Current Draw (Amperage)</a></li><li><a href="#33-thrust" class="table-of-contents__link toc-highlight">3.3 Thrust</a></li><li><a href="#34-battery-voltage-and-propeller-compatibility" class="table-of-contents__link toc-highlight">3.4 Battery Voltage and Propeller Compatibility</a></li></ul></li><li><a href="#4-practical-considerations-for-system-integration" class="table-of-contents__link toc-highlight">4. Practical Considerations for System Integration</a><ul><li><a href="#41-motor-and-esc-matching" class="table-of-contents__link toc-highlight">4.1 Motor and ESC Matching</a></li><li><a href="#42-propeller-and-battery-configuration" class="table-of-contents__link toc-highlight">4.2 Propeller and Battery Configuration</a></li></ul></li><li><a href="#5-conclusion" class="table-of-contents__link toc-highlight">5. Conclusion</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">RC Knowledgebase</div></div></div></footer></div>
+</body>
+</html>
