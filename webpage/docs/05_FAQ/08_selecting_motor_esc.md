@@ -1,4 +1,4 @@
-# Power System Components 🛩️
+# Selecting Brushless-Motor and ESC
 
 Selecting the appropriate power system components—brushless motor, Electronic Speed Controller (ESC), Lithium Polymer (LiPo) battery, and propeller—is crucial for the optimal performance, efficiency, and safety of your radio-controlled (RC) airplane. This comprehensive guide provides a step-by-step approach to determining the ideal specifications for each component, ensuring both beginners and advanced hobbyists can make informed decisions tailored to their specific aircraft and performance requirements.
 

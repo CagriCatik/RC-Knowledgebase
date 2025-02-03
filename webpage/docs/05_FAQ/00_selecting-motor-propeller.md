@@ -1,4 +1,4 @@
-# How to select the Motor and Propeller
+# Selecting Motor and Propeller
 
 Selecting the right combination of motor and propeller is pivotal for achieving optimal performance, efficiency, and reliability in your fixed-wing RC (Radio-Controlled) airplane. This chapter delves into essential considerations, rules of thumb, and practical tips to guide both beginners and seasoned hobbyists in making informed decisions when pairing motors with propellers for their fixed-wing models.
 
