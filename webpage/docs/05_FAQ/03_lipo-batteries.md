@@ -40,9 +40,9 @@ This document provides an in‐depth technical overview of Lithium Polymer (LiPo
   Measured in milliampere-hours, the capacity represents the total charge stored in the battery. For instance, a 2100 mAh battery theoretically delivers 2100 mA for one hour under ideal conditions.
 - **Energy (Wh):**  
   Energy content can be calculated as:  
-  \[
+  $$
   \text{Energy (Wh)} = \text{Capacity (Ah)} \times \text{Nominal Voltage (V)}
-  \]
+  $$
   Thus, a 2100 mAh (2.1 Ah) 3S pack (nominal 11.1 V) contains about 23.3 Wh of energy.
 - **Load and Duration Trade-Offs:**  
   Higher capacity enables longer runtime, but also adds weight. Engineers must balance capacity with the performance requirements and weight restrictions of the RC model.
@@ -50,9 +50,9 @@ This document provides an in‐depth technical overview of Lithium Polymer (LiPo
 ### 2.3 C Rating (Discharge Rate) and Internal Resistance
 - **Discharge C Rating:**  
   The C rating defines the maximum safe continuous discharge current relative to capacity. A 20C battery with 2100 mAh can deliver:
-  \[
+  $$
   20 \times 2100\,\text{mA} = 42\,\text{A}
-  \]
+  $$
 - **Impact on Performance:**  
   The C rating, together with the battery’s internal resistance, affects the voltage sag under load. Lower internal resistance minimizes voltage drops during high current draw, ensuring steady performance.
 - **Analogy:**  
