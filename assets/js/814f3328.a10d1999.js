@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrc_knowledgebase=self.webpackChunkrc_knowledgebase||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/RC-Knowledgebase/blog/welcome","unlisted":false,"date":"2025-02-01T00:00:00.000Z"}]}')}}]);
