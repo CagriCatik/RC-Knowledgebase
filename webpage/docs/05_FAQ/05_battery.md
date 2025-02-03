@@ -24,9 +24,9 @@ This overview demystifies the underlying principles, numerical designations, and
   
 - **Voltage Calculation:**  
   Each NiMH cell is nominally rated at approximately 1.2 V. In a six-cell configuration, the total nominal pack voltage is calculated as:  
-  \[
+  $$
   \text{Total Voltage} = 6 \times 1.2\,\text{V} = 7.2\,\text{V}
-  \]
+  $$
   When fully charged, the voltage per cell may rise above the nominal value (typically ranging from 1.5 V to 1.66 V), resulting in a slightly higher pack voltage.
 
 ### 2.2 Charging Characteristics
@@ -98,9 +98,9 @@ Battery labels contain critical information that assists in selecting the approp
 
 - **Discharge C Rating:**  
   The discharge C rating indicates the maximum continuous current that the battery can safely deliver. For example, a battery labeled as “20C” with a capacity of 5000 mAh can deliver a maximum current of:
-  \[
+  $$
   20 \times 5000\,\text{mA} = 100,000\,\text{mA} \, (100\,\text{A})
-  \]
+  $$
   
 - **Charge C Rating:**  
   The charge C rating specifies the maximum current at which the battery can be charged safely. Commonly, LiPo batteries are charged at a rate of 1C (i.e., 1 times the capacity in amperes). However, some batteries are rated for higher charge rates (e.g., 3C), which can significantly reduce charging time. It is important to note that charging at higher rates may shorten the overall lifespan of the battery.
