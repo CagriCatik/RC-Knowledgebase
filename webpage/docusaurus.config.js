@@ -110,7 +110,6 @@ const config = {
             label: "FAQ ❓",
           },
 
-          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/CagriCatik/My-RC-Plane-Knowledgebase",
             label: "GitHub",
