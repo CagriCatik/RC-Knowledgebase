@@ -79,14 +79,21 @@ const config = {
             type: "docSidebar",
             sidebarId: "planeSidebar",
             position: "left",
-            label: "RC Plane 🛩️",
+            label: "Plane 🛩️",
           },
 
           {
+          type: "docSidebar",
+          sidebarId: "droneSidebar",
+          position: "left",
+          label: "Drone 🚁", 
+          },
+
+         {
             type: "docSidebar",
             sidebarId: "carSidebar",
             position: "left",
-            label: "RC Car 🏎️",
+            label: "Car 🏎️",
           },
 
           {
@@ -94,6 +101,20 @@ const config = {
             sidebarId: "controllerSidebar",
             position: "left",
             label: "Controller 🎮",
+          },
+
+                    {
+            type: "docSidebar",
+            sidebarId: "controllerSidebar",
+            position: "left",
+            label: "Flight Controller 🤖",
+          },
+
+                    {
+            type: "docSidebar",
+            sidebarId: "controllerSidebar",
+            position: "left",
+            label: "Simulator 🎛️",
           },
 
           {

@@ -9,6 +9,7 @@ Remote Control (RC) cars are intricate electromechanical systems that combine pr
 The battery is the primary energy storage unit in an RC car, analogous to the fuel tank in a conventional vehicle. It stores chemical energy, which is converted into electrical energy to power the car's subsystems.
 
 ### **Key Specifications**
+
 1. **Voltage (V)**:
    - **Definition**: Voltage is the potential difference between two points in a circuit, measured in volts (V). It determines the speed at which the motor rotates.
    - **Impact on Performance**: Higher voltage results in increased motor RPM (revolutions per minute), leading to greater speed. However, exceeding the voltage rating of a component can cause irreversible damage due to overheating or electrical breakdown.
@@ -26,6 +27,7 @@ The battery is the primary energy storage unit in an RC car, analogous to the fu
 The Electronic Speed Controller (ESC) is a sophisticated electronic device that regulates the power flow from the battery to the motor. It acts as an intermediary, ensuring precise control over the motor's speed and direction.
 
 ### **Core Functions**
+
 1. **Power Modulation**:
    - The ESC controls the motor's speed by modulating the power delivered from the battery. This is achieved through Pulse Width Modulation (PWM), where the duty cycle of the power signal determines the motor's RPM.
    - **Example**: A 50% duty cycle means the motor receives power for half the time, resulting in half the maximum speed.
@@ -34,6 +36,7 @@ The Electronic Speed Controller (ESC) is a sophisticated electronic device that 
    - The ESC interprets signals from the receiver to adjust the motor's speed and direction. It can also implement advanced features such as acceleration curves, braking, and turbo timing.
 
 ### **Motor Types and Specifications**
+
 1. **Brushless Motors**:
    - **KV Rating**: The KV rating indicates the motor's RPM per volt. For example, a 3300 KV motor will spin at 3,300 RPM when supplied with 1 volt.
    - **Performance Trade-offs**: Higher KV motors provide greater speed but less torque, making them suitable for lightweight, high-speed applications. Lower KV motors offer more torque, ideal for heavy or off-road vehicles.
@@ -58,6 +61,7 @@ The Electronic Speed Controller (ESC) is a sophisticated electronic device that 
 The receiver is the central hub for processing control signals from the radio transmitter. It relays these signals to the ESC (for throttle/brake) and the steering servo (for directional control).
 
 ### **Battery Eliminator Circuit**
+
 1. **Function**:
    - The Battery Eliminator Circuit (BEC) is an integrated voltage regulator within the ESC. It steps down the battery voltage to a level suitable for the receiver and servo, typically 6 volts.
    - **Historical Context**: In early RC systems, separate batteries were used to power the radio gear and servos. The BEC eliminated the need for a secondary battery.
@@ -66,6 +70,7 @@ The receiver is the central hub for processing control signals from the radio tr
    - Modern ESCs often feature programmable BEC output voltages, allowing compatibility with high-voltage servos and receivers (e.g., 7.4V or higher).
 
 ### **Steering Servo**
+
 1. **Mechanical Operation**:
    - The servo converts electrical signals into mechanical motion, controlling the steering mechanism. Most servos have a 120-degree range of motion (±60 degrees).
 
@@ -80,6 +85,7 @@ The receiver is the central hub for processing control signals from the radio tr
 The radio control system enables wireless communication between the user and the RC car. It consists of a transmitter (held by the user) and a receiver (mounted on the car).
 
 ### **Signal Transmission**
+
 1. **Channels**:
    - Most RC cars use a two-channel system:
      - **Channel 1**: Steering (controls the servo).
@@ -89,6 +95,7 @@ The radio control system enables wireless communication between the user and the
    - The transmitter encodes user inputs (e.g., steering angle, throttle position) into radio frequency (RF) signals. These signals are transmitted to the receiver, which decodes them and relays the information to the appropriate component.
 
 ### **Wiring and Connectors**
+
 1. **Three-Wire Connector**:
    - **Red Wire**: Positive power supply.
    - **Black Wire**: Ground.

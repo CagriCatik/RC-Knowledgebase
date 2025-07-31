@@ -1,4 +1,4 @@
-# Rechargeable Battery Technologies for RC Applications
+# Rechargeable Battery Technologies
 
 This document provides a comprehensive technical overview of rechargeable battery technologies used in radio-controlled (RC) systems. It covers the principles of common battery chemistries—particularly Nickel Metal Hydride (NiMH) and Lithium Polymer (LiPo) batteries—explains key specifications such as voltage, capacity (mAh), and C ratings, and outlines proper charging, discharging, and usage protocols. The intent is to empower engineers, hobbyists, and technical practitioners to make informed decisions regarding battery selection and maintenance for RC vehicles and related systems.
 

@@ -1,4 +1,4 @@
-# Electronic Speed Controllers for RC Models
+# Electronic Speed Controllers
 
 This document provides a comprehensive, technically rigorous tutorial on Electronic Speed Controllers (ESCs) as used in radio-controlled (RC) models. It covers the operating principles, wiring configurations, firmware options, calibration procedures, and the integration of battery eliminator circuits (BECs). The tutorial critically examines common explanations, clarifies simplified analogies, and highlights essential considerations for both traditional and modern applications.
 

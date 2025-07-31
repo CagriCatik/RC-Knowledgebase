@@ -1,0 +1,87 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "CaXCxKe0-HyBNvN0lpngh",
+      "type": "rectangle",
+      "x": 617.4313388979799,
+      "y": 288.22512761164455,
+      "width": 419.910351890376,
+      "height": 199.86999282118336,
+      "angle": 0,
+      "strokeColor": "#e03131",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "af",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1019341864,
+      "version": 29,
+      "versionNonce": 1991547480,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "F39JYlTOimbdzvHILEWCH"
+        }
+      ],
+      "updated": 1753987229410,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "F39JYlTOimbdzvHILEWCH",
+      "type": "text",
+      "x": 792.7705404168984,
+      "y": 378.16012402223623,
+      "width": 69.23194885253906,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#e03131",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ag",
+      "roundness": null,
+      "seed": 2035325992,
+      "version": 10,
+      "versionNonce": 1664289320,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1753987231718,
+      "link": null,
+      "locked": false,
+      "text": "RC Plane",
+      "fontSize": 16,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "CaXCxKe0-HyBNvN0lpngh",
+      "originalText": "RC Plane",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff",
+    "lockedMultiSelections": {}
+  },
+  "files": {}
+}

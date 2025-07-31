@@ -1,4 +1,4 @@
-# Battery Connectors for RC Applications
+# Battery Connectors
 
 This document provides a detailed technical overview of battery connectors used in radio-controlled (RC) systems. It covers the various connector types, their electrical and mechanical characteristics, and guidelines for selecting the most appropriate connector based on current handling, ease of installation, and long-term reliability.
 

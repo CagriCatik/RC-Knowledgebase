@@ -1,4 +1,4 @@
-# Battery Charging in RC Applications
+# Battery Charging
 
 RC battery chargers are critical to the performance and longevity of rechargeable battery packs used in remote-controlled vehicles—from cars and trucks to drones and helicopters. With a wide variety of battery chemistries available (e.g., NiMH, LiPo), it is essential to match the charger to the battery’s requirements. This document reviews common charger types, explains their operating principles, and offers practical guidelines for selecting and using RC battery chargers safely and effectively.
 

@@ -1,4 +1,4 @@
-# LiPo Batteries for RC Applications
+# LiPo Batteries
 
 This document provides an in‐depth technical overview of Lithium Polymer (LiPo) batteries as used in remote-controlled (RC) models, drones, and other similar applications. It discusses the underlying electrochemical principles, interprets key specifications—including capacity (mAh), voltage, internal resistance, and C rating—and presents comprehensive safety, charging, and handling guidelines necessary for both reliable performance and user safety.
 

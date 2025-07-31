@@ -1,4 +1,4 @@
-# Brushless Motors for RC Applications
+# Brushless Motors
 
 This document provides a rigorous technical overview of brushless motors used in radio-controlled (RC) models. It clarifies how to interpret the labeling on motor housings (or “cans”), explains key performance metrics, and discusses considerations for pairing motors with speed controllers (ESCs) and propellers. Whether you are a seasoned engineer or a dedicated hobbyist, this guide is designed to deepen your understanding of brushless motor specifications and their practical implications.
 

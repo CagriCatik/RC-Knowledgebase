@@ -1,0 +1,115 @@
+# Defining Airplane Parameters
+
+Accurate specification of critical parameters is essential for selecting components and predicting flight performance in metric units (meters, kilograms, watts). Guidelines below are supported by current industry sources.
+
+---
+
+## Wingspan (Span)
+
+Wingspan, the distance between wingtips, strongly affects:
+
+* **Wing loading** (kg/m²), influencing stall speed and handling.
+* **Aspect ratio**, impacting aerodynamic efficiency.
+* Transport considerations.
+
+Typical range:
+
+* **Park‑flyers**: \~0.8–1.0 m
+* **Sport/trainer models**: \~1.3–1.9 m
+* **Large hobby models**: up to \~2.7–3.0 m
+
+---
+
+## All‑Up Weight (AUW)
+
+**AUW** is the total mass at ready‑to‑fly condition, includes:
+
+* Airframe (foam, balsa, composite)
+* Motor + propeller
+* Battery (LiPo/Li‑ion)
+* Electronics (ESC, receiver, servos)
+* Hardware and accessories
+
+Estimate AUW early and iterate: heavier batteries or motors may require revising center-of-gravity or wing loading assumptions.
+
+---
+
+## Wing Loading
+
+Convert total flying weight (kg) and wing area (m²) to wing loading in kg/m². Use empirical categories:
+
+* **Slow flyers / thermal gliders**: ```< 20 kg/m² (≈ under 4 oz/ft²)```
+* **Basic trainers / park flyers**: ```\~25–50 kg/m² (≈5–7 oz/ft²)```
+* **Sport / scale aerobatics**: ```\~50–65 kg/m² (≈7–10 oz/ft²)```
+* **High‑speed warbirds / racers**: ```> 65 kg/m² (≈≥13 oz/ft²)``` ([Fly RC Magazine][1], [rcuniverse.com][2], [rcplanes.online][3], [Goodies RC][4])
+
+Lower wing loading yields slower stall speed and better handling; higher values improve speed and penetration in wind.
+
+---
+
+## Power Input per Mass (W/kg)
+
+Input power recommendations depend on flying style ([rcplanes.online][3]):
+
+* **Trainers / slow scale models**: \~155–200 W/kg
+* **Sport / fast scale aerobatics**: \~200–245 W/kg
+* **Advanced aerobatic / high‑speed models**: \~245–285 W/kg
+* **Lightly loaded 3D / ducted fan**: \~285–330 W/kg
+* **Unlimited performance 3D**: \~330–440+ W/kg ([wrcs.org.au][5])
+
+MotoCalc and other sources support a rule of thumb: \~88–132 W/kg (\~40–60 W/lb) for typical sport‑class aircraft ([motocalc.com][6]). For beginners, start with the lower end of the range.
+
+---
+
+## Thrust-to-Weight Ratio (T/W)
+
+For stable flight and climb performance, thrust should match a fraction of weight:
+
+* **Trainers**: \~0.5–0.8 :1 (i.e. thrust ≈50–80% of AUW)
+* **Fast / aerobatic models**: ≥0.8 :1 or more for responsive performance ([Goodies RC][7], [RC Ratings][8])
+
+Example: a 1.2 kg trainer ideally has \~0.84 kg thrust (0.7:1) to fly comfortably ([Joyplanes][9]).
+
+---
+
+## Valid Parameter Envelope
+
+Design guidelines apply reliably for:
+
+* **Wingspan**: ```\~0.8–3.0 m```
+* **AUW**: ```\~0.7–18 kg```
+
+Micro models ```(<0.7 kg)``` and giant‑scale ```(>18 kg)``` need adapted assumptions: micro models face low Reynolds number effects; large models benefit from redundancies and gas power systems. ([www.slideshare.net][10], [Goodies RC][11])
+
+---
+
+## Design Summary Table
+
+| Class / Flight Style    | Wing Loading (kg/m²) | Input Power (W/kg) | Thrust‑to‑Weight |
+| ----------------------- | -------------------- | ------------------ | ---------------- |
+| Slow / trainer          | \~25–50              | \~155–200          | \~0.5–0.8:1      |
+| Sport / aerobatic scale | \~50–65              | \~200–245          | ≥0.8:1           |
+| Advanced aerobatic / 3D | ≥65                  | \~245–330+         | 1.0:1 or higher  |
+
+---
+
+## Iteration and Validation
+
+1. Specify intended flying style: trainer, sport, aerobatic, 3D.
+2. Estimate AUW (include margin).
+3. Compute wing area and wing loading.
+4. Calculate target input watts (AUW × desired W/kg).
+5. Verify thrust rating of motor/prop achieves desired T/W ratio.
+6. Iterate component selection to balance AUW, power, and CG.
+
+[1]: https://www.flyrc.com/wing-load-calculator/ "Fly RC Wing Load Calculator"
+[2]: https://www.rcuniverse.com/forum/rc-jets-120/11665857-thrust-weight-ratios.html "Thrust to weight ratios - RCU Forums - RC Universe"
+[3]: https://rcplanes.online/setup_guidelines.htm "Guide Lines to Choose RC Plane's Power System"
+[4]: https://www.goodiesrc.com/rc-plane-weight/ "RC Plane Weight: The Ultimate Guide - Goodies RC"
+[5]: https://wrcs.org.au/WP1/electric-rc-airplanes/ "How to determine a Model’s Electric Power Requirements"
+[6]: https://www.motocalc.com/tutorial/tutorial.pdf "Model Aircraft Power System Selection Using Your Computer - MotoCalc"
+[7]: https://www.goodiesrc.com/how-much-thrust-to-weight-for-rc-planes/ "My Guide To Thrust To Weight Ratio For RC Planes"
+[8]: https://rcratings.com/rc-airplane-electric-motor-calculator/ "RC Airplane Electric Motor Calculator - RC Ratings"
+[9]: https://joyplanes.com/en/power-to-weight-ratio-rc-aircraft/ "Power to weight ratio in rc aircraft | The right motor and prop - Joyplanes"
+[10]: https://www.slideshare.net/slideshow/rc-plane-and-aerofoil-design-bst-caculations-211-1pdf/255342440 "RC Plane and Aerofoil Design bst - CACULATIONS 2-1-1 (1).pdf"
+[11]: https://www.goodiesrc.com/how-much-weight-can-a-rc-plane-carry/ "How Much Weight Can An RC Plane Carry? 8 Factors To Consider!"

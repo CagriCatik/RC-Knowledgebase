@@ -1,0 +1,89 @@
+# ESC and Current Selection
+
+Selecting a suitable Electronic Speed Controller (ESC) requires accurate current estimation, proper sizing with safety margin, and compatible battery pairing.
+
+## Estimating Current Draw
+
+Given:
+
+- Required power: **1100 W**  
+- Battery: **6‑cell LiPo**, nominal voltage = 6 × 3.7 V = **22.2 V**
+
+Compute continuous current:
+
+```math
+I = P / V = 1100 W ÷ 22.2 V ≈ 49.5 A
+````
+
+Expected continuous current draw: **≈ 49.5 A**.
+
+### 5.2 ESC Sizing with Safety Margin
+
+Guidance: select an ESC with \~20% headroom above continuous draw to accommodate bursts, thermal rise, and measurement variation ([rslfpv.com][1]).
+
+```math
+Iₘᵢₙ = 49.5 A × 1.2 ≈ 59.4 A
+```
+
+Recommendations:
+
+* Minimum ESC rating: **60 A continuous**
+* Preferred ESC range: **60–80 A** for added robustness
+* Consider ESC’s **burst current rating** (typically +10–30%) ([rslfpv.com][1])
+
+## Battery C‑Rating & Capacity
+
+Battery C‑rating defines safe continuous current:
+
+```math
+Iₘₐₓ = C × Capacity (Ah)
+```
+
+### Example: 4000 mAh (4.0 Ah)
+
+```math
+Cₘᵢₙ = 49.5 A ÷ 4.0 Ah = 12.4 C
+```
+
+Choose **≥ 25 C** to minimize voltage sag, thermal stress, and extend cycle life ([rctech.net][2]).
+
+### Example: 2200 mAh (2.2 Ah)
+
+```math
+Cₘᵢₙ = 49.5 A ÷ 2.2 Ah ≈ 22.5 C
+```
+
+* Feasible with **25–35 C** packs
+* Downsides: shorter runtime, increased heat, higher IR drop
+* Prefer **≥ 4000 mAh** for trainer and sport aircraft ([FliteTest Forum][3])
+
+## Summary Table
+
+| Parameter                       | Value                       |
+| ------------------------------- | --------------------------- |
+| Continuous current draw         | \~49.5 A                    |
+| ESC minimum rating              | \~60 A                      |
+| ESC preferred rating            | 60–80 A                     |
+| Battery minimum C‑rating @ 4 Ah | ≥ 12.5 C (recommend ≥ 25 C) |
+| Battery with 2.2 Ah             | ≥ 22.7 C (use ≥ 25 C)       |
+
+## Additional Factors
+
+* Verify ESC supports the battery voltage range (6S LiPo → 22.2 V nominal) ([rcplanelab.com][4], [Labdarna][5], [Swell RC][6], [rslfpv.com][1], [Wikipedia][7], [FliteTest Forum][8], [RC Ratings][9]).
+* Use a watt-meter to measure actual current draw with full-throttle test later, after bare motor, battery, and propeller are installed ([hooked-on-rc-airplanes.com][10]).
+* Ensure ESC includes a proper BEC or integrated LVC (Low Voltage Cutoff) to maintain control surfaces at battery near cut-off ([Wikipedia][11]).
+* Proper cooling and layout matter; overspec ESC may add weight, while underspec ESC risks damage or mid‑flight shutdown ([Labdarna][5], [rcplanelab.com][4]).
+
+---
+
+[1]: https://rslfpv.com/how-to-interpret-esc-amp-ratings-for-safe-power-delivery/ "How to Interpret ESC Amp Ratings for Safe Power Delivery?"
+[2]: https://www.rctech.net/forum/rookie-zone/1078647-c-rating-battery-motor-draw.html "C rating of battery & motor draw - R/C Tech Forums"
+[3]: https://forum.flitetest.com/index.php?threads%2Fpicking-an-appropriate-motor-propeller-and-esc.74201%2F=&utm_source=chatgpt.com "Help! - Picking an appropriate motor, propeller, and ESC"
+[4]: https://rcplanelab.com/electric-rc-motors/ "How to pick the correct electric power setup for your RC Airplane"
+[5]: https://www.labdarna.com/en/understanding-electronic-speed-controllers-esc-for-rc-airplanes-types-functions-selection-and-safety "Understanding Electronic Speed Controllers (ESC) for RC Airplanes ..."
+[6]: https://www.swellrc.com/what-is-esc-in-rc-plane/ "Understanding ESC in RC Planes"
+[7]: https://en.wikipedia.org/wiki/Electronic_speed_control "Electronic speed control"
+[8]: https://forum.flitetest.com/index.php?threads%2Fdetermining-esc-needs-based-on-battery-discharge-rate.3414%2F=&utm_source=chatgpt.com "Determining ESC Needs based on Battery Discharge Rate"
+[9]: https://rcratings.com/rc-airplane-electric-motor-calculator/ "RC Airplane Electric Motor Calculator - RC Ratings"
+[10]: https://www.hooked-on-rc-airplanes.com/Electronic-speed-controller.html "Electronic Speed Controller Basics - Hooked on RC Airplanes"
+[11]: https://en.wikipedia.org/wiki/Battery_eliminator_circuit "Battery eliminator circuit"

@@ -1,0 +1,38 @@
+# CONTRIBUTING TO THIS MESS
+
+Wow, you actually want to contribute? That’s... bold. Welcome to the absurd chaos of this project. If you're still reading, here are the “guidelines” (read: vague suggestions) to not make everything worse.
+
+## REPORTING ISSUES
+
+Think you found a bug? Or just confused by your own code? Either way, open an issue. Use the fancy `.github/ISSUE_TEMPLATE` things like a civilized human. Please include:
+
+- What broke (duh)
+- How to make it break again
+- What you *thought* it would do
+- What it *actually* did, besides disappointing you
+
+## PULL REQUESTS
+
+PRs are a thing. You can make one. Here’s how to not make it painful:
+
+1. Fork this dumpster fire and branch off `main`.
+2. Make your changes. Try not to reinvent disaster.
+3. Commit like you mean it. No “Update file” nonsense.
+4. Open a PR. Describe what changed and *why you thought it was a good idea*.
+5. Reference issues, or just pretend you're fixing world peace.
+
+## CODING STANDARDS (LOL)
+
+We pretend to have standards. Please humor us by:
+
+- Writing code that someone, someday, might understand
+- Commenting the WTFs and WHYs
+- Writing tests, unless it’s too hard (but seriously, write tests)
+
+## LICENSE OF CONTRIBUTIONS
+
+By pushing code here, you consent to it becoming part of this mess. It inherits the project’s license (which basically means we can do WTF WE WANT with it too). Thanks!
+
+---
+
+Pull requests may be ignored, mocked, or accepted with no explanation. Good luck.

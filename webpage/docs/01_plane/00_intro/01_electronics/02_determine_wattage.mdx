@@ -1,0 +1,119 @@
+# Determining Required Power
+
+Sizing an RC aircraft's power system relies on the **power-to-weight ratio**, typically expressed in **watts per kilogram (W/kg)**. This metric defines how much electric power is available per unit mass and directly influences performance, including takeoff thrust, climb rate, aerobatic capability, and overall agility.
+
+> Reference standards sourced from: [FliteTest Power System Guide](https://www.flitetest.com/articles/power-system-basics), [RCGroups Forums](https://www.rcgroups.com/forums/showthread.php?2266226-How-many-watts-per-pound-do-I-need), and [ModelFlying UK](https://www.modelflying.co.uk/news/article/how-much-power-do-you-need/20162)
+
+## 4.1 Understanding Power-to-Weight Ratio (W/kg)
+
+The ratio is calculated using:
+
+```math
+P = M × R
+```
+
+Where:
+
+* `P` = Total required power (W)
+* `M` = Aircraft ready-to-fly mass (kg)
+* `R` = Target power-to-weight ratio (W/kg)
+
+## 4.2 Typical Ranges by Flight Profile
+
+| Power (W/kg) | Flight Type                          | Description                                                     |
+| ------------ | ------------------------------------ | --------------------------------------------------------------- |
+| 130–185      | Trainer / Glider / Thermal           | Focus on stability and long endurance. Limited aerobatic power. |
+| 200–230      | Sport / General Aerobatics           | Good for rolls, loops, mild vertical climbs.                    |
+| 300+         | 3D / Aggressive Aerobatics / Pattern | Instant throttle response, hover, vertical climbs.              |
+
+> Rule of thumb: 100 W/lb ≈ 220 W/kg ([FliteTest](https://www.flitetest.com/articles/power-system-basics))
+
+---
+
+## 4.3 Example Calculation: 5.0 kg Trainer Aircraft
+
+Target profile: **Sport Flight (200 W/kg)**
+
+```math
+P = 5.0 kg × 200 W/kg = 1000 W
+```
+
+> **Result**: You need at least **1000 watts** continuous power output from the motor-propeller system.
+
+---
+
+## 4.4 System Component Matching
+
+This 1000 W target informs selection of all drivetrain components:
+
+### 4.4.1 Motor
+
+* Select a **brushless outrunner** rated for:
+
+  * ≥ 1000 W continuous
+  * Voltage: 6S (22.2 V) compatible
+  * Kv suited to intended propeller diameter and pitch
+* Use manufacturer data or eCalc simulation to validate power at expected RPM.
+
+> See: [RCMotorCalc](https://www.ecalc.ch/motorcalc.php) for system simulation.
+
+---
+
+### 4.4.2 ESC (Electronic Speed Controller)
+
+Add a **20–30% safety margin** to handle bursts and thermal load:
+
+```math
+I = 1000 W ÷ 22.2 V ≈ 45 A ⇒ ESC ≥ 60 A
+```
+
+* **Minimum**: 60 A continuous
+* **Preferred**: 70–80 A for overhead
+* Must support 6S LiPo voltage range
+* Include BEC (if powering receiver/servos) or use external UBEC
+
+> [rslfpv.com ESC Ratings Guide](https://rslfpv.com/how-to-interpret-esc-amp-ratings-for-safe-power-delivery)
+
+---
+
+### 4.4.3 Battery
+
+* Capacity: ≥ 4000 mAh for reasonable flight time
+* Discharge Rating (C):
+
+```math
+Iₘₐₓ = 4.0 Ah × 35C = 140 A
+```
+
+* Result: 140 A > 45 A draw ⇒ **sufficient margin**
+* Preferred spec: **6S 4000–5000 mAh 35C**
+
+> Reference: [BatteryUniversity.com](https://batteryuniversity.com/article/bu-503a-battery-testing-equipment)
+
+---
+
+### 4.4.4 Propeller
+
+* Match to motor Kv and voltage to yield \~1000 W @ full throttle
+* Confirm with **wattmeter** (e.g. Turnigy or PowerLog)
+
+> Example: If your motor pulls 45 A @ 22.2 V with a 12×6 APC prop, that’s \~999 W.
+
+---
+
+### 4.5 Summary
+
+| Component | Specification Needed               |
+| --------- | ---------------------------------- |
+| Motor     | ≥ 1000 W, 6S capable, matched Kv   |
+| ESC       | ≥ 60 A (continuous), 6S compatible |
+| Battery   | 6S 4000+ mAh, ≥ 25–35 C            |
+| Propeller | Matches motor to achieve 1000 W    |
+
+---
+
+## 4.6 Conclusion
+
+The **W/kg method** ensures consistent, scalable power calculations across aircraft types. For a 5 kg sport flyer, designing around **1000 W** allows you to meet expected performance targets without overloading the system or underpowering the airframe.
+
+Use real-world measurements (wattmeter, thrust stand) to validate theoretical specs.
