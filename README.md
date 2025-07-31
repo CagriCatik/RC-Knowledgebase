@@ -1,4 +1,5 @@
-# ✈️ RC Engineering Hub 🚗  
+# ✈️ RC Knowledgebase 🚗
+
 _The Encyclopedia of Glorious Overengineering_
 
 Welcome to the **RC Engineering Hub**, where adulting means spending 40 hours perfecting the aerodynamics of a 3D printed plane while ignoring the dishes. This is your one-stop-shop for over-detailed, underused knowledge about remote-controlled planes, cars, and 3D-printed parts you’ll definitely never finish printing.
@@ -9,8 +10,6 @@ Clearly, you have too much money and not enough supervision.
 >
 
 > Because nothing screams “cutting-edge RC engineering” like Markdown files duct-taped together by a dinosaur-themed static site generator.
-
-
 
 <table>
   <tr>
@@ -125,6 +124,20 @@ Topics include:
 - Printer maintenance (LOL) 🧼❌.  
 - Component compatibility, assuming your sanity lasts that long 🧠🔩.
 
+## 🧰 Tools
+
+Because nothing says “organized chaos” like a folder full of files that all claim to calculate something — and somehow none of them do it the same way. Here's the lineup of glorious redundancy:
+
+- 🖥️ UI to confuse yourself in real time  
+- 🧮 Raw math, no distractions  
+- 🔋 For when you want to overthink battery sizing  
+- ⚖️ W/kg ratio so you can feel superior  
+- 📊 Logs or measures something... probably important  
+- 📝 Scribbles from your last “test flight”  
+- 📐 Where you tried to be scientific  
+- 🎯 The script that might actually work  
+
+Each one was created with a purpose. That purpose has since been forgotten.
 
 ---
 
